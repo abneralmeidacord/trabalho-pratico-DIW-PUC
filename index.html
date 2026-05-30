@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overwatch Atividade - Trabalho Prático 01</title>
+
+    <!-- Puxando Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Puxando CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<!-- Corpo do site -->
+
+<body class="d-flex flex-column align-items-center w-100">
+    <main class="banner w-100 d-flex flex-column align-items-center">
+        <!-- Navbar interativa que dá scroll para sections específicas do site -->
+        <header>
+            <nav class="d-flex flex-row justify-content-evenly align-items-center w-100 gap-3">
+                <h1><a href="index.html"><span>HOME</span></a></h1>
+                <h1><a href="#heroes">HEROES</a></h1>
+                <h1><a href="#story">STORY</a></h1>
+            </nav>
+        </header>
+
+        <!-- Banner principal do site (main) com redirecionamento pra download na steam -->
+        <section class="hero w-100 d-flex flex-column align-items-start">
+            <div class="hero-content d-flex flex-column align-items-start justify-content-center">
+                <img class="hero-img" src="assets/img/Logo.png" alt="Overwatch Logo" height="200px">
+                <a class="button d-flex align-items-center justify-content-center text-decoration-none mt-3"
+                    href="https://store.steampowered.com/app/2357570/Overwatch/">
+                    <p class="mb-0">DOWNLOAD</p>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Seção de heróis (Carrossel e lista de todos os heróis) -->
+    <section class="heroes w-100 d-flex flex-column align-items-center py-4" id="heroes">
+
+        <div class="w-100 d-flex justify-content-center mb-4 flex-column align-items-center">
+
+            <div class="ow-card text-center align-self-center mb-4">
+                <h2>MEET OVERWATCH</h2>
+                <h3>BE A HERO, BUILD A SQUAD, WIN THE FIGHT</h3>
+                <p>Overwatch is a free-to-play, hero-shooter, team-based action game set in the optimistic future,
+                    where every match is the ultimate 5v5 battlefield brawl. Play as a time-jumping freedom fighter, a
+                    beat-dropping battlefield DJ, or one of over 30 other unique heroes as you battle it out around the
+                    globe.</p>
+            </div>
+
+            <!-- Carrossel de Heróis em destaque -->
+            <div id="carouselExampleCaptions" class="carousel slide my-4" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="detalhes.html?id=19" class="carousel-hero-link">
+                            <img src="https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt3f24de1ac73c318b/631a8b6ba633280e74dc25c9/1600_Doomfist.jpg"
+                                class="d-block w-100" alt="Doomfist">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h1>Doomfist</h1>
+                                <p>Doomfist was the calculating leader of Talon, a terrorist organization and
+                                    paramilitary
+                                    force that works in direct opposition to Overwatch.</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="carousel-item">
+                        <a href="detalhes.html?id=32" class="carousel-hero-link">
+                            <img src="https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt73c08ba684761b8a/631a8ac1f581050de0035de2/1600_Sombra.jpg"
+                                class="d-block w-100" alt="Sombra">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h1>Sombra</h1>
+                                <p>One of the world's most notorious hackers, Sombra uses information to manipulate
+                                    those in
+                                    power.</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="carousel-item">
+                        <a href="detalhes.html?id=13" class="carousel-hero-link">
+                            <img src="https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt77c5cddf632a67d7/631a8b2bf581050de0035dee/1600_Lucio.jpg"
+                                class="d-block w-100" alt="Lúcio">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h1>Lúcio</h1>
+                                <p>Lúcio is an international celebrity who inspires social change through his music and
+                                    activism.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="container-fluid px-4">
+            <!-- Wrapper pra mapping de heróis no JSON -->
+            <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 g-3 justify-content-center"
+                id="heroes-wrapper">
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de História (Pequenos capítulos da narrativa da história do game) -->
+    <section class="story w-100" id="story">
+
+        <div class="dark w-100 d-flex flex-column flex-md-row align-items-center justify-content-between">
+            <div class="story-content d-flex flex-column justify-content-center p-4">
+                <h1>Story</h1>
+                <h1 class="chapter-title">The Omnic Crisis</h1>
+                <p>The story of the Overwatch universe begins with the creation of highly advanced robots known as
+                    omnics, designed to help humanity. At some point, these omnics turned against humans in a global
+                    conflict called the Omnic Crisis. Cities were destroyed, and humanity was on the verge of collapse.
+                    To fight back, the United Nations formed an elite international task force called Overwatch,
+                    bringing together exceptional soldiers, scientists, and heroes to end the war.</p>
+            </div>
+            <img src="assets/img/omnic-crisis.png" alt="Omnic Crisis" class="story-img">
+        </div>
+
+        <div class="light w-100 d-flex flex-column-reverse flex-md-row align-items-center justify-content-between">
+            <img src="assets/img/overwatch-golden-age.png" alt="Golden Age" class="story-img">
+            <div class="story-content d-flex flex-column justify-content-center p-4">
+                <h1 class="chapter-title">Overwatch Golden Age</h1>
+                <p>Overwatch quickly became a symbol of hope. Led by figures like Jack Morrison and Gabriel Reyes, the
+                    organization successfully ended the Omnic Crisis and entered a golden age. During this time,
+                    Overwatch expanded its influence worldwide, helping maintain peace and responding to crises. Heroes
+                    such as Tracer, Reinhardt, and Mercy became widely known and admired, representing the best of
+                    humanity.</p>
+            </div>
+        </div>
+
+        <div class="dark w-100 d-flex flex-column flex-md-row align-items-center justify-content-between">
+            <div class="story-content d-flex flex-column justify-content-center p-4">
+                <h1 class="chapter-title">Talon Conflict</h1>
+                <p>However, Overwatch's success eventually led to internal problems. Accusations of corruption,
+                    political pressure, and controversial black-ops missions began to damage its reputation. Tensions
+                    grew especially between Morrison and Reyes, whose ideologies clashed more and more over time. At the
+                    same time, a dangerous organization known as Talon emerged from the shadows, seeking to destabilize
+                    the world and accelerate human evolution through chaos.
+                    <br><br>
+                    The conflict within Overwatch reached its breaking point when a violent confrontation between
+                    Morrison and Reyes resulted in a massive explosion at Overwatch's headquarters in Switzerland. Both
+                    men were presumed dead, and the incident led to global outrage. As a result, the United Nations
+                    officially shut down Overwatch, banning its operations and marking the end of the organization.
+                </p>
+            </div>
+            <img src="assets/img/talon-conflict.png" alt="Talon Conflict" class="story-img">
+        </div>
+
+        <div class="light w-100 d-flex flex-column-reverse flex-md-row align-items-center justify-content-between">
+            <img src="assets/img/overwacth-recall.jpg" alt="Winston Recall" class="story-img">
+            <div class="story-content d-flex flex-column justify-content-center p-4">
+                <h1 class="chapter-title">WINSTON RECALLS OVERWATCH</h1>
+                <p>Eventually, new crises began to emerge, including renewed omnic uprisings and the growing influence
+                    of Talon. Seeing the world in danger once more, the scientist gorilla Winston initiated a global
+                    recall, calling former agents back into action. This moment marked the beginning of Overwatch's
+                    return.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Banner footer imagem com o fim da história que existe até agora -->
+    <section class="banner-footer w-100 d-flex flex-column align-items-center justify-content-end pb-4">
+        <div class="ow-card text-center">
+            <h1>THE FIGHT CONTINUES</h1>
+            <p>Eventually, new crises began to emerge, including renewed omnic uprisings and the growing influence of
+                Talon. Seeing the world in danger once more, the scientist gorilla Winston initiated a global recall,
+                calling former agents back into action. This moment marked the beginning of Overwatch's return.</p>
+        </div>
+    </section>
+
+    <aside></aside>
+
+    <!-- Footer com dados do Projeto e meus dados de Aluno -->
+    <footer class="w-100 d-flex justify-content-center align-items-center py-3 flex-column">
+        <p class="mb-0">Trabalho prático - Desenvolvimento de Interfaces Web - PUC MINAS</p>
+        <p class="mb-16">Aluno: (ABNER ALMEIDA) 1512771</p>
+        <p class="mb-0">&copy; 2026 Tema: Overwatch. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
