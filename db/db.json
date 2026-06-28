@@ -24,7 +24,13 @@
       "fotoPerfil": "https://static.wikia.nocookie.net/overwatch_gamepedia/images/1/19/Icon-D.Va.png/revision/latest/scale-to-width-down/250?cb=20221005161600",
       "id": 2,
       "admin": false,
-      "fav": []
+      "fav": [
+        8,
+        14,
+        9,
+        41,
+        51
+      ]
     },
     {
       "nome": "Alice Cordeiro Diniz",

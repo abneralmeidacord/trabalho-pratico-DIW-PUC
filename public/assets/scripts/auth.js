@@ -158,7 +158,7 @@ async function cadastrarUsuario(evento) {
       login: login,
       senha: senha,
       fotoPerfil: avatarEscolhido,
-      favoritos: [],
+      fav: [],
     };
 
     await fetch(`${URL_BASE}/users`, {

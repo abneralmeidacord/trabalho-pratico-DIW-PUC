@@ -10,6 +10,9 @@ const URL_BASE = "http://localhost:3000";
 /* pega o id da div que será o output dos detalhes do Herói no HTML*/
 const heroDetailsWrapper = document.getElementById("hero-details");
 
+/* Pega o id da div que será o output do perfil-favoritos no HTML */
+const perfilFavoritosWrapper = document.getElementById("perfil-favoritos");
+
 /* Formata o texto de categoria dos heróis */
 function formatText(text) {
   if (!text) return "";
@@ -462,6 +465,108 @@ async function renderHeroDetails() {
   }
 }
 
+/* Função assíncrona para renderizar a tela de perfil e favoritos */
+async function renderPerfilFavoritos() {
+  const usuarioLogado = pegarUsuarioLogado();
+
+  if (!perfilFavoritosWrapper) {
+    return;
+  }
+
+  if (!usuarioLogado) {
+    perfilFavoritosWrapper.innerHTML = `
+      <div class="details-error text-center">
+        <h1>You are not logged in</h1>
+        <p>Sign in to see your profile and favorite heroes.</p>
+        <a class="details-button" href="login.html">Go to login</a>
+      </div>
+    `;
+    return;
+  }
+
+  try {
+    const usuarioResponse = await fetch(`${URL_BASE}/users/${usuarioLogado.id}`);
+    const heroesResponse = await fetch(HEROES_URL);
+
+    if (!usuarioResponse.ok || !heroesResponse.ok) {
+      throw new Error("Erro ao carregar perfil");
+    }
+
+    const usuarioAtualizado = await usuarioResponse.json();
+    const heroes = await heroesResponse.json();
+
+    sessionStorage.setItem("usuarioLogado", JSON.stringify(usuarioAtualizado));
+
+    const favIds = Array.isArray(usuarioAtualizado.fav)
+      ? usuarioAtualizado.fav.map(Number)
+      : [];
+
+    const favoriteHeroes = favIds
+      .map(function (idFavorito) {
+        return heroes.find(function (hero) {
+          return Number(hero.id) === Number(idFavorito);
+        });
+      })
+      .filter(function (hero) {
+        return hero !== undefined;
+      });
+
+    let favoriteHeroesHTML = "";
+
+    if (favoriteHeroes.length === 0) {
+      favoriteHeroesHTML = `
+        <p class="favorite-empty">You don't have favorite heroes yet.</p>
+      `;
+    } else {
+      favoriteHeroesHTML = favoriteHeroes.map(heroCardHTML).join("");
+    }
+
+    document.title = `${usuarioAtualizado.login} | Your profile`;
+
+    perfilFavoritosWrapper.innerHTML = `
+      <article class="hero-details-card">
+        <div class="hero-details-header">
+          <div class="hero-details-image-wrapper profile-image-wrapper">
+            <img src="${usuarioAtualizado.fotoPerfil}" alt="${usuarioAtualizado.login}">
+          </div>
+
+          <div class="hero-details-info">
+            <p class="details-tag">Your Profile</p>
+            <h2>${usuarioAtualizado.login}</h2>
+
+            <div class="details-meta">
+              <div>
+                <span>Favorite Heroes</span>
+                <strong>${favoriteHeroes.length}</strong>
+              </div>
+            </div>
+
+            <a class="details-button" href="index.html">Back to home</a>
+          </div>
+        </div>
+
+        <div class="abilities-section">
+          <h2>Favorite Heroes</h2>
+
+          <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 g-3 justify-content-center favorite-heroes-grid">
+            ${favoriteHeroesHTML}
+          </div>
+        </div>
+      </article>
+    `;
+  } catch (erro) {
+    console.error("Erro ao carregar perfil:", erro);
+
+    perfilFavoritosWrapper.innerHTML = `
+      <div class="details-error text-center">
+        <h1>Error Loading Profile</h1>
+        <p>Unable to get your favorite heroes.</p>
+        <a class="details-button" href="index.html">Back to home</a>
+      </div>
+    `;
+  }
+}
+
 /* Função init que carrega os cards de heróis automáticamente */
 async function init() {
   const heroes = await renderHeroCards();
@@ -474,6 +579,10 @@ if (heroesWrapper) {
 
 if (heroDetailsWrapper) {
   renderHeroDetails();
+}
+
+if (perfilFavoritosWrapper) {
+  renderPerfilFavoritos();
 }
 
 /* Essa variável guarda o avatar escolhido pelo usuário */
@@ -606,8 +715,11 @@ function mostrarUsuarioNoHeader() {
 
   areaUsuario.innerHTML = `
     <div class="usuario-logado">
-      <img src="${usuarioLogado.fotoPerfil}" alt="${usuarioLogado.nome}" class="foto-usuario">
-      <span class="nome-usuario">${usuarioLogado.login}</span>
+      <a href="perfil-favoritos.html" class="usuario-link" title="Open profile">
+        <img src="${usuarioLogado.fotoPerfil}" alt="${usuarioLogado.nome}" class="foto-usuario">
+        <span class="nome-usuario">${usuarioLogado.login}</span>
+      </a>
+
       <button class="btn-sair" onclick="sair()">Logout</button>
     </div>
   `;

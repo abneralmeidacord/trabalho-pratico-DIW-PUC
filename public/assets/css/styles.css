@@ -541,6 +541,15 @@ html {
     margin-bottom: 24px;
 }
 
+.hero-details-info h2 {
+    color: #1e1e1e;
+    font-size: clamp(2.5rem, 3.5vw, 2.4rem);
+    font-weight: 900;
+    line-height: 0.9;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
 .details-meta {
     display: flex;
     flex-wrap: wrap;
@@ -1464,4 +1473,42 @@ html {
     border-radius: 50%;
     border: 2px solid #f99e1a;
     background-color: #c8ddf8;
+}
+
+/* Tela de perfil e favoritos */
+.usuario-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #fefefe;
+}
+
+.nome-usuario:hover {
+    color: #f99e1a;
+}
+
+.profile-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    max-height: 300px;
+    object-fit: contain;
+}
+
+.favorite-heroes-grid {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.favorite-empty {
+    width: 100%;
+    margin: 0;
+    padding: 22px;
+    border: 2px dashed #f99e1a;
+    border-radius: 18px;
+    color: #43484c;
+    background-color: #fefefe;
+    font-weight: 900;
+    text-align: center;
 }
