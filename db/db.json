@@ -1,0 +1,1993 @@
+{
+  "heroes": [
+    {
+      "id": 1,
+      "hero": "Tracer",
+      "hero_img": "https://static.wikia.nocookie.net/overwatch_gamepedia/images/2/29/Icon-Tracer.png/revision/latest/scale-to-width-down/250?cb=20221005170620",
+      "hero_class": "dps",
+      "hero_func": "flanker"
+    },
+    {
+      "id": 2,
+      "hero": "Reinhardt",
+      "hero_img": "https://static.wikia.nocookie.net/overwatch_gamepedia/images/8/83/Icon-Reinhardt.png/revision/latest/scale-to-width-down/250?cb=20221005161659",
+      "hero_class": "tank",
+      "hero_func": "stalwart"
+    },
+    {
+      "id": 3,
+      "hero": "Mercy",
+      "hero_img": "https://static.wikia.nocookie.net/overwatch_gamepedia/images/0/03/Icon-Mercy.png/revision/latest/scale-to-width-down/250?cb=20221005160926",
+      "hero_class": "support",
+      "hero_func": "healer"
+    },
+    {
+      "id": 4,
+      "hero": "Genji",
+      "hero_img": "https://static.wikia.nocookie.net/overwatch_gamepedia/images/1/1c/Icon-Genji.png/revision/latest/scale-to-width-down/250?cb=20221005165931",
+      "hero_class": "dps",
+      "hero_func": "flanker"
+    },
+    {
+      "id": 5,
+      "hero": "Winston",
+      "hero_img": "https://static.wikia.nocookie.net/overwatch_gamepedia/images/f/f8/Icon-Winston.png/revision/latest/scale-to-width-down/250?cb=20221005161721",
+      "hero_class": "tank",
+      "hero_func": "initiator"
+    },
+    {
+      "id": 6,
+      "hero": "Ana",
+      "hero_img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiNXml4a7a6mcfn0HlivxO_1XfD8uQAHe1rw&s",
+      "hero_class": "support",
+      "hero_func": "tactician"
+    },
+    {
+      "id": 7,
+      "hero": "Soldier: 76",
+      "hero_img": "https://static.wikia.nocookie.net/overwatch_gamepedia/images/2/2b/Icon-Soldier_76.png/revision/latest/scale-to-width-down/250?cb=20221005170355",
+      "hero_class": "dps",
+      "hero_func": "specialist"
+    },
+    {
+      "id": 8,
+      "hero": "D.Va",
+      "hero_img": "https://static.wikia.nocookie.net/overwatch_gamepedia/images/1/19/Icon-D.Va.png/revision/latest/scale-to-width-down/250?cb=20221005161600",
+      "hero_class": "tank",
+      "hero_func": "initiator"
+    },
+    {
+      "id": 9,
+      "hero": "Kiriko",
+      "hero_img": "https://static.wikia.nocookie.net/overwatch_gamepedia/images/c/ca/Icon-kiriko.png/revision/latest/scale-to-width-down/250?cb=20221004202610",
+      "hero_class": "support",
+      "hero_func": "medic"
+    },
+    {
+      "id": 10,
+      "hero": "Reaper",
+      "hero_img": "https://static.wikia.nocookie.net/overwatch_gamepedia/images/a/a9/Icon-Reaper.png/revision/latest/scale-to-width-down/250?cb=20221005170219",
+      "hero_class": "dps",
+      "hero_func": "flanker"
+    },
+    {
+      "id": 11,
+      "hero": "Sigma",
+      "hero_img": "https://static.wikia.nocookie.net/overwatch_gamepedia/images/e/e0/Icon-Sigma.png/revision/latest/scale-to-width-down/250?cb=20221005161714",
+      "hero_class": "tank",
+      "hero_func": "stalwart"
+    },
+    {
+      "id": 12,
+      "hero": "Zenyatta",
+      "hero_img": "https://static.wikia.nocookie.net/overwatch_gamepedia/images/f/f7/Icon-Zenyatta.png/revision/latest/scale-to-width-down/250?cb=20221005160943",
+      "hero_class": "support",
+      "hero_func": "tactician"
+    },
+    {
+      "id": 13,
+      "hero": "Lúcio",
+      "hero_img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/040bb13f5123ab93faad2f95627ba184608aef4b2469a4d3003859c7087df044.png",
+      "hero_class": "support",
+      "hero_func": "tactician"
+    },
+    {
+      "id": 14,
+      "hero": "Juno",
+      "hero_img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/c0167d251e57b0aa2b1e16c37d87f0e7c77263db9dd0503d77b5f2589bf3e4a0.png",
+      "hero_class": "support",
+      "hero_func": "survivor"
+    },
+    {
+      "id": 15,
+      "hero": "Mauga",
+      "hero_img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/33d39bb439c08975197fc52eff4874716839711b5356c4fdc174f9c24bac1d0e.png",
+      "hero_class": "tank",
+      "hero_func": "bruiser"
+    },
+    {
+      "id": 16,
+      "hero": "Orisa",
+      "hero_img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a73958a28551f5254f3ab3f97c5f5f8d698a95c0b6a515d1a2b1caac169205a6.png",
+      "hero_class": "tank",
+      "hero_func": "bruiser"
+    },
+    {
+      "id": 17,
+      "hero": "Roadhog",
+      "hero_img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/89ddf07e4b619ed96169042e296a1b8856d102746f35add88284b44a9a5a6a03.png",
+      "hero_class": "tank",
+      "hero_func": "bruiser"
+    },
+    {
+      "id": 18,
+      "hero": "Zarya",
+      "hero_img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/9b6f63cc66ddf9d5e0862173c733cc0d2e574c5c89357798d91b93b2f95a7080.png",
+      "hero_class": "tank",
+      "hero_func": "bruiser"
+    },
+    {
+      "id": 19,
+      "hero": "Doomfist",
+      "hero_img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ff5c54f43ad253c7faeda9c4ed31d42582ea6b19205d197866f3dd0c0aa14c16.png",
+      "hero_class": "tank",
+      "hero_func": "initiator"
+    },
+    {
+      "id": 20,
+      "hero": "Hazard",
+      "hero_img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ca48b96dbae6ea7f58ce8a5e73513c8c62b1685bdbf258020fb78bb21a008b5f.png",
+      "hero_class": "tank",
+      "hero_func": "initiator"
+    },
+    {
+      "id": 21,
+      "hero": "Wrecking Ball",
+      "hero_img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/9ef1d58867136e0b26f928d896000b9dab216118f6e2f59e53f2e975e1e27afa.png",
+      "hero_class": "tank",
+      "hero_func": "initiator"
+    },
+    {
+      "id": 22,
+      "hero": "Domina",
+      "hero_img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/1161c112292c56c052c0ae711792fcde06e3251b98bc9709e582dd7585b5dcd6.png",
+      "hero_class": "tank",
+      "hero_func": "stalwart"
+    },
+    {
+      "id": 23,
+      "hero": "Junker Queen",
+      "hero_img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/06eeecb359f311f43a8f5121d4f9f3a93c565d70b30e94ef543c05596c9a39dc.png",
+      "hero_class": "tank",
+      "hero_func": "stalwart"
+    },
+    {
+      "id": 24,
+      "hero": "Ramattra",
+      "hero_img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ddef7c9fb8ce4256e8508196b486f81950efe7aaa6cf27fec4668beb4cd15774.png",
+      "hero_class": "tank",
+      "hero_func": "stalwart"
+    },
+    {
+      "id": 25,
+      "hero": "Anran",
+      "hero_img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/2c38b41d79a1ce9a08b9ad8eb7edf3ff819bd448af16a5815be8c7fdb7203aa0.png",
+      "hero_class": "dps",
+      "hero_func": "flanker"
+    },
+    {
+      "id": 26,
+      "hero": "Vendetta",
+      "hero_img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/cf8ffb52b6f315546d5e94e9d6defad5a2c570798776956de23f47536f9529da.png",
+      "hero_class": "dps",
+      "hero_func": "flanker"
+    },
+    {
+      "id": 27,
+      "hero": "Venture",
+      "hero_img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/dcab9123f5f55df22e54d4e797de43c71b917e0149dd059a7fd6136f48464cd0.png",
+      "hero_class": "dps",
+      "hero_func": "flanker"
+    },
+    {
+      "id": 28,
+      "hero": "Echo",
+      "hero_img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d4f2d5b0c2b7e82d61353186c5f23152ccba9d3569b50839aa580dca3e9114ba.png",
+      "hero_class": "dps",
+      "hero_func": "recon"
+    },
+    {
+      "id": 29,
+      "hero": "Freja",
+      "hero_img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/811963897c352d9f178bec882d94bd0281074feee7c429c5145b6b8ea8ebe862.png",
+      "hero_class": "dps",
+      "hero_func": "recon"
+    },
+    {
+      "id": 30,
+      "hero": "Pharah",
+      "hero_img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/60ac2d5de4a6d34644d8872233da402f1436c87f804bb11a21661bb30bf4a51f.png",
+      "hero_class": "dps",
+      "hero_func": "recon"
+    },
+    {
+      "id": 31,
+      "hero": "Sierra",
+      "hero_img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/4bfd3d8b95844231115cb5bf4db03344c71bc3e865189c52403b2dc51438e63a.png",
+      "hero_class": "dps",
+      "hero_func": "recon"
+    },
+    {
+      "id": 32,
+      "hero": "Sombra",
+      "hero_img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/47727b02a16e3bd7b2447d86ae1edf11587bc320b2aecb4f2f16a7ca4ad4e8a0.png",
+      "hero_class": "dps",
+      "hero_func": "recon"
+    },
+    {
+      "id": 33,
+      "hero": "Ashe",
+      "hero_img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/4076bbaa2eb52a0bfe612434071e56e7702d5454473dbbea2f9e392a9d997a94.png",
+      "hero_class": "dps",
+      "hero_func": "sharpshooter"
+    },
+    {
+      "id": 34,
+      "hero": "Cassidy",
+      "hero_img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/9240cd64cc8ef58df9acbf55204ab1b5d8578f743fda5931f0dbccbd75ab841b.png",
+      "hero_class": "dps",
+      "hero_func": "sharpshooter"
+    },
+    {
+      "id": 35,
+      "hero": "Hanzo",
+      "hero_img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/78b61c3e806fb26b02b8980fba62189155074fc15bd865b0883268e546030be5.png",
+      "hero_class": "dps",
+      "hero_func": "sharpshooter"
+    },
+    {
+      "id": 36,
+      "hero": "Sojourn",
+      "hero_img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/82b8c1b8765dcb9a0ba16e343c3516bf324c771ac81e9878473280216e70a889.png",
+      "hero_class": "dps",
+      "hero_func": "sharpshooter"
+    },
+    {
+      "id": 37,
+      "hero": "Widowmaker",
+      "hero_img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/6e4702b45f196aaf51555cf57327322721f45458b17f5f0643ed008a88378259.png",
+      "hero_class": "dps",
+      "hero_func": "sharpshooter"
+    },
+    {
+      "id": 38,
+      "hero": "Bastion",
+      "hero_img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/4ede795c2a681aaccfa72d0c901cba0cb8a2c292fd6a97b2ba9faed161c2d184.png",
+      "hero_class": "dps",
+      "hero_func": "specialist"
+    },
+    {
+      "id": 39,
+      "hero": "Emre",
+      "hero_img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/c51e2f698138861c0e3b6cfab3c3ca9d67fd709be175e7c397aa6f2649712a30.png",
+      "hero_class": "dps",
+      "hero_func": "specialist"
+    },
+    {
+      "id": 40,
+      "hero": "Junkrat",
+      "hero_img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/7660b9fc6f25f30858fdd8797fe0d52b2306f1e78fef99843f58a274e69af046.png",
+      "hero_class": "dps",
+      "hero_func": "specialist"
+    },
+    {
+      "id": 41,
+      "hero": "Mei",
+      "hero_img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/4a55ced3bd597fb08e0fde9dc007f8543ac616ba98ca3db9b0e4d871a8ae17f8.png",
+      "hero_class": "dps",
+      "hero_func": "specialist"
+    },
+    {
+      "id": 42,
+      "hero": "Symmetra",
+      "hero_img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ebec57e8bd68b3d4383edfeb34f8f52dd0b94a6467d594c2fee722e8a97c32aa.png",
+      "hero_class": "dps",
+      "hero_func": "specialist"
+    },
+    {
+      "id": 43,
+      "hero": "Torbjörn",
+      "hero_img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ce17118cedc29b0d2ac1e059666bed36b9531c85079b0b894bb402d12c917ba9.png",
+      "hero_class": "dps",
+      "hero_func": "specialist"
+    },
+    {
+      "id": 44,
+      "hero": "Lifeweaver",
+      "hero_img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/3376515cebed0904012e67e956f6d1b9c12e03da642845eeaf787b7e4c7b339d.png",
+      "hero_class": "support",
+      "hero_func": "medic"
+    },
+    {
+      "id": 45,
+      "hero": "Moira",
+      "hero_img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f48f8485056d5d00dad195859188d23e50f7126b8b08b5646f46ef1b42f5e1de.png",
+      "hero_class": "support",
+      "hero_func": "medic"
+    },
+    {
+      "id": 46,
+      "hero": "Brigitte",
+      "hero_img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/795fba91376d87d441a7f359ae12a3175dfa95825ccc4414cc6b95b129fc4cb0.png",
+      "hero_class": "support",
+      "hero_func": "survivor"
+    },
+    {
+      "id": 47,
+      "hero": "Illari",
+      "hero_img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ce42d1455e03e79f321345fea84b27a8918b5db8bd7ab9b2ca9e569606ede9e4.png",
+      "hero_class": "support",
+      "hero_func": "survivor"
+    },
+    {
+      "id": 48,
+      "hero": "Mizuki",
+      "hero_img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a9733c2367e0cbd70b9316fd2e1e17028653ec56d0051ea6ff098531dc4f99fc.png",
+      "hero_class": "support",
+      "hero_func": "survivor"
+    },
+    {
+      "id": 49,
+      "hero": "Wuyang",
+      "hero_img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/4959500b495b35c0908be2abda56b53f2601b2c5cc39a1cfde8df1bffd38d66d.png",
+      "hero_class": "support",
+      "hero_func": "survivor"
+    },
+    {
+      "id": 50,
+      "hero": "Baptiste",
+      "hero_img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d4e6f1ca45d9f88fa89260787397f141a6f007b14e5b26698883b6a17bab9680.png",
+      "hero_class": "support",
+      "hero_func": "tactician"
+    },
+    {
+      "id": 51,
+      "hero": "Jetpack Cat",
+      "hero_img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/03a184cd0de27091e0099ac22635ad9615a8f6997881a5c25cc5f2444764f729.png",
+      "hero_class": "support",
+      "hero_func": "tactician"
+    }
+  ],
+  "details": [
+    {
+      "id": 1,
+      "heroId": 1,
+      "hero": "Tracer",
+      "ability1": {
+        "id": 1,
+        "name": "Pulse Pistols",
+        "description": "Tracer's short-range automatic weapons that rapidly fire bullets at enemies."
+      },
+      "ability2": {
+        "id": 2,
+        "name": "Blink",
+        "description": "Teleports Tracer a short distance in the direction she is moving."
+      },
+      "ability3": {
+        "id": 3,
+        "name": "Recall",
+        "description": "Returns Tracer to her previous position, health, and ammo from a few seconds earlier."
+      },
+      "ability4": {
+        "id": 4,
+        "name": "Pulse Bomb",
+        "description": "Throws a powerful sticky explosive that detonates after a short delay."
+      }
+    },
+    {
+      "id": 2,
+      "heroId": 2,
+      "hero": "Reinhardt",
+      "ability1": {
+        "id": 1,
+        "name": "Rocket Hammer",
+        "description": "Reinhardt's massive melee weapon that deals heavy damage in a wide arc."
+      },
+      "ability2": {
+        "id": 2,
+        "name": "Barrier Field",
+        "description": "Creates a large energy shield that protects Reinhardt and his allies from incoming damage."
+      },
+      "ability3": {
+        "id": 3,
+        "name": "Charge",
+        "description": "Reinhardt charges forward, carrying enemies with him and smashing them into walls."
+      },
+      "ability4": {
+        "id": 4,
+        "name": "Fire Strike",
+        "description": "Launches a fiery projectile that passes through enemies and deals damage."
+      },
+      "ability5": {
+        "id": 5,
+        "name": "Earthshatter",
+        "description": "Slams the ground with the rocket hammer, knocking down enemies in front of Reinhardt."
+      }
+    },
+    {
+      "id": 3,
+      "heroId": 3,
+      "hero": "Mercy",
+      "ability1": {
+        "id": 1,
+        "name": "Caduceus Staff",
+        "description": "Mercy's staff can heal an ally or boost the damage they deal."
+      },
+      "ability2": {
+        "id": 2,
+        "name": "Caduceus Blaster",
+        "description": "A sidearm weapon that fires projectiles to damage enemies."
+      },
+      "ability3": {
+        "id": 3,
+        "name": "Guardian Angel",
+        "description": "Mercy flies toward a targeted ally, allowing her to quickly reposition."
+      },
+      "ability4": {
+        "id": 4,
+        "name": "Resurrect",
+        "description": "Revives a nearby fallen teammate after a short cast time."
+      },
+      "ability5": {
+        "id": 5,
+        "name": "Angelic Descent",
+        "description": "Allows Mercy to slow her fall while airborne."
+      },
+      "ability6": {
+        "id": 6,
+        "name": "Valkyrie",
+        "description": "Allows Mercy to fly freely and enhances her staff, blaster, and mobility."
+      }
+    },
+    {
+      "id": 4,
+      "heroId": 4,
+      "hero": "Genji",
+      "ability1": {
+        "id": 1,
+        "name": "Shuriken",
+        "description": "Genji throws precise shuriken projectiles, either in a straight line or in a spread."
+      },
+      "ability2": {
+        "id": 2,
+        "name": "Deflect",
+        "description": "Deflects incoming projectiles back toward enemies and blocks melee attacks."
+      },
+      "ability3": {
+        "id": 3,
+        "name": "Swift Strike",
+        "description": "Genji dashes forward, damaging enemies in his path. Eliminations reset the cooldown."
+      },
+      "ability4": {
+        "id": 4,
+        "name": "Cyber-Agility",
+        "description": "Allows Genji to climb walls and perform a double jump."
+      },
+      "ability5": {
+        "id": 5,
+        "name": "Dragonblade",
+        "description": "Genji draws his blade for a short time, dealing powerful melee damage."
+      }
+    },
+    {
+      "id": 5,
+      "heroId": 5,
+      "hero": "Winston",
+      "ability1": {
+        "id": 1,
+        "name": "Tesla Cannon",
+        "description": "Winston's weapon fires short-range electricity that damages enemies in front of him."
+      },
+      "ability2": {
+        "id": 2,
+        "name": "Jump Pack",
+        "description": "Winston leaps through the air and damages enemies when he lands."
+      },
+      "ability3": {
+        "id": 3,
+        "name": "Barrier Projector",
+        "description": "Deploys a protective dome-shaped barrier that blocks enemy attacks."
+      },
+      "ability4": {
+        "id": 4,
+        "name": "Primal Rage",
+        "description": "Winston gains a large amount of health, enhanced jumping, and powerful knockback melee attacks."
+      }
+    },
+    {
+      "id": 6,
+      "heroId": 6,
+      "hero": "Ana",
+      "ability1": {
+        "id": 1,
+        "name": "Biotic Rifle",
+        "description": "Ana's rifle heals allies and damages enemies from long range."
+      },
+      "ability2": {
+        "id": 2,
+        "name": "Sleep Dart",
+        "description": "Fires a dart that puts an enemy to sleep for a short time."
+      },
+      "ability3": {
+        "id": 3,
+        "name": "Biotic Grenade",
+        "description": "Throws a grenade that heals allies, increases healing received, damages enemies, and prevents enemy healing."
+      },
+      "ability4": {
+        "id": 4,
+        "name": "Nano Boost",
+        "description": "Empowers an ally, increasing their damage and reducing the damage they take."
+      }
+    },
+    {
+      "id": 7,
+      "heroId": 7,
+      "hero": "Soldier: 76",
+      "ability1": {
+        "id": 1,
+        "name": "Heavy Pulse Rifle",
+        "description": "Soldier: 76's automatic rifle that deals reliable damage at medium range."
+      },
+      "ability2": {
+        "id": 2,
+        "name": "Helix Rockets",
+        "description": "Launches explosive rockets that deal burst damage to enemies."
+      },
+      "ability3": {
+        "id": 3,
+        "name": "Sprint",
+        "description": "Allows Soldier: 76 to run faster while moving forward."
+      },
+      "ability4": {
+        "id": 4,
+        "name": "Biotic Field",
+        "description": "Deploys a healing field that restores health to Soldier: 76 and nearby allies."
+      },
+      "ability5": {
+        "id": 5,
+        "name": "Tactical Visor",
+        "description": "Locks Soldier: 76's aim onto enemies in view for a short time."
+      }
+    },
+    {
+      "id": 8,
+      "heroId": 8,
+      "hero": "D.Va",
+      "ability1": {
+        "id": 1,
+        "name": "Fusion Cannons",
+        "description": "D.Va's mech weapons fire continuous short-range shots."
+      },
+      "ability2": {
+        "id": 2,
+        "name": "Light Gun",
+        "description": "D.Va's pilot weapon used when she is outside of her mech."
+      },
+      "ability3": {
+        "id": 3,
+        "name": "Boosters",
+        "description": "Launches D.Va's mech forward, allowing her to fly and knock back enemies."
+      },
+      "ability4": {
+        "id": 4,
+        "name": "Defense Matrix",
+        "description": "Projects a defensive field that destroys incoming projectiles."
+      },
+      "ability5": {
+        "id": 5,
+        "name": "Micro Missiles",
+        "description": "Fires a volley of explosive missiles at enemies."
+      },
+      "ability6": {
+        "id": 6,
+        "name": "Eject!",
+        "description": "D.Va ejects from her mech when it is destroyed."
+      },
+      "ability7": {
+        "id": 7,
+        "name": "Self-Destruct",
+        "description": "D.Va ejects and overloads her mech, causing a large explosion."
+      },
+      "ability8": {
+        "id": 8,
+        "name": "Call Mech",
+        "description": "Calls down a new mech, damaging enemies near the landing area."
+      }
+    },
+    {
+      "id": 9,
+      "heroId": 9,
+      "hero": "Kiriko",
+      "ability1": {
+        "id": 1,
+        "name": "Healing Ofuda",
+        "description": "Kiriko sends healing talismans that seek targeted allies."
+      },
+      "ability2": {
+        "id": 2,
+        "name": "Kunai",
+        "description": "Throws a kunai projectile that deals increased critical damage."
+      },
+      "ability3": {
+        "id": 3,
+        "name": "Swift Step",
+        "description": "Teleports Kiriko directly to an ally, even through walls."
+      },
+      "ability4": {
+        "id": 4,
+        "name": "Protection Suzu",
+        "description": "Throws a charm that briefly protects allies and cleanses negative effects."
+      },
+      "ability5": {
+        "id": 5,
+        "name": "Wall Climb",
+        "description": "Allows Kiriko to climb walls by jumping toward them."
+      },
+      "ability6": {
+        "id": 6,
+        "name": "Kitsune Rush",
+        "description": "Summons a fox spirit path that increases allies' movement speed, attack speed, and cooldown recovery."
+      }
+    },
+    {
+      "id": 10,
+      "heroId": 10,
+      "hero": "Reaper",
+      "ability1": {
+        "id": 1,
+        "name": "Hellfire Shotguns",
+        "description": "Reaper's twin shotguns deal heavy damage at close range."
+      },
+      "ability2": {
+        "id": 2,
+        "name": "The Reaping",
+        "description": "Reaper heals himself for a portion of the damage he deals."
+      },
+      "ability3": {
+        "id": 3,
+        "name": "Dire Triggers",
+        "description": "Fires a longer-range accurate volley from both Hellfire Shotguns."
+      },
+      "ability4": {
+        "id": 4,
+        "name": "Wraith Form",
+        "description": "Reaper becomes invulnerable and moves faster, but cannot shoot."
+      },
+      "ability5": {
+        "id": 5,
+        "name": "Shadow Step",
+        "description": "Teleports Reaper to a targeted location after a short cast time."
+      },
+      "ability6": {
+        "id": 6,
+        "name": "Death Blossom",
+        "description": "Reaper spins and fires both shotguns, damaging all nearby enemies."
+      }
+    },
+    {
+      "id": 11,
+      "heroId": 11,
+      "hero": "Sigma",
+      "ability1": {
+        "id": 1,
+        "name": "Hyperspheres",
+        "description": "Sigma launches two gravitic charges that bounce and explode after a short duration."
+      },
+      "ability2": {
+        "id": 2,
+        "name": "Experimental Barrier",
+        "description": "Sends out a floating barrier that Sigma can stop and recall."
+      },
+      "ability3": {
+        "id": 3,
+        "name": "Kinetic Grasp",
+        "description": "Absorbs incoming projectiles and converts part of the damage into shields."
+      },
+      "ability4": {
+        "id": 4,
+        "name": "Accretion",
+        "description": "Sigma gathers debris and throws it at an enemy, knocking them down."
+      },
+      "ability5": {
+        "id": 5,
+        "name": "Gravitic Flux",
+        "description": "Lifts enemies into the air and slams them back down, dealing damage."
+      }
+    },
+    {
+      "id": 12,
+      "heroId": 12,
+      "hero": "Zenyatta",
+      "ability1": {
+        "id": 1,
+        "name": "Orb of Destruction",
+        "description": "Zenyatta fires energy orbs individually or charges multiple orbs to release at once."
+      },
+      "ability2": {
+        "id": 2,
+        "name": "Orb of Harmony",
+        "description": "Places a healing orb on an ally that restores health over time."
+      },
+      "ability3": {
+        "id": 3,
+        "name": "Orb of Discord",
+        "description": "Places an orb on an enemy, causing them to take increased damage."
+      },
+      "ability4": {
+        "id": 4,
+        "name": "Snap Kick",
+        "description": "Zenyatta's quick melee deals increased damage and knocks enemies back."
+      },
+      "ability5": {
+        "id": 5,
+        "name": "Transcendence",
+        "description": "Zenyatta becomes invulnerable and rapidly heals nearby allies."
+      }
+    },
+    {
+      "id": 13,
+      "heroId": 13,
+      "hero": "Lúcio",
+      "ability1": {
+        "id": 1,
+        "name": "Sonic Amplifier",
+        "description": "Lúcio's primary weapon, a sonic blaster that fires projectiles at enemies."
+      },
+      "ability2": {
+        "id": 2,
+        "name": "Crossfade",
+        "description": "Switches between two songs: Healing Boost heals nearby allies, and Speed Boost makes nearby allies move faster."
+      },
+      "ability3": {
+        "id": 3,
+        "name": "Amp It Up",
+        "description": "Increases the effectiveness of Lúcio's healing and speed songs."
+      },
+      "ability4": {
+        "id": 4,
+        "name": "Wall Ride",
+        "description": "Allows Lúcio to ride along walls, gaining increased mobility and the ability to reach higher ground."
+      },
+      "ability5": {
+        "id": 5,
+        "name": "Sound Barrier",
+        "description": "Creates a temporary shield that absorbs damage for nearby allies."
+      }
+    },
+    {
+      "id": 14,
+      "heroId": 14,
+      "hero": "Juno",
+      "ability1": {
+        "id": 1,
+        "name": "Mediblaster",
+        "description": "Juno's burst-fire weapon heals allies and damages enemies."
+      },
+      "ability2": {
+        "id": 2,
+        "name": "Pulsar Torpedoes",
+        "description": "Locks onto allies and enemies, healing allies and damaging enemies with homing projectiles."
+      },
+      "ability3": {
+        "id": 3,
+        "name": "Glide Boost",
+        "description": "Boosts Juno's horizontal movement, allowing her to glide quickly through the air."
+      },
+      "ability4": {
+        "id": 4,
+        "name": "Hyper Ring",
+        "description": "Deploys a ring that increases movement speed for allies who pass through it."
+      },
+      "ability5": {
+        "id": 5,
+        "name": "Martian Overboots",
+        "description": "Allows Juno to double jump and hover in the air for extra mobility."
+      },
+      "ability6": {
+        "id": 6,
+        "name": "Orbital Ray",
+        "description": "Calls down a moving beam that heals allies and increases their damage."
+      }
+    },
+    {
+      "id": 15,
+      "heroId": 15,
+      "hero": "Mauga",
+      "ability1": {
+        "id": 1,
+        "name": "Berserker",
+        "description": "Mauga gains temporary health when dealing critical damage."
+      },
+      "ability2": {
+        "id": 2,
+        "name": "Incendiary Chaingun",
+        "description": "An automatic chaingun that ignites enemies after repeated hits."
+      },
+      "ability3": {
+        "id": 3,
+        "name": "Volatile Chaingun",
+        "description": "An automatic chaingun that deals critical damage to burning enemies."
+      },
+      "ability4": {
+        "id": 4,
+        "name": "Overrun",
+        "description": "Mauga charges forward, knocking enemies back and stomping at the end of the charge."
+      },
+      "ability5": {
+        "id": 5,
+        "name": "Cardiac Overdrive",
+        "description": "Nearby allies take reduced damage and heal by dealing damage."
+      },
+      "ability6": {
+        "id": 6,
+        "name": "Cage Fight",
+        "description": "Traps nearby enemies in a cylindrical barrier and gives Mauga unlimited ammo for a short time."
+      }
+    },
+    {
+      "id": 16,
+      "heroId": 16,
+      "hero": "Orisa",
+      "ability1": {
+        "id": 1,
+        "name": "Augmented Fusion Driver",
+        "description": "Orisa's heat-based automatic weapon deals sustained damage at medium range."
+      },
+      "ability2": {
+        "id": 2,
+        "name": "Energy Javelin",
+        "description": "Throws a javelin that damages and knocks back an enemy, stunning them if they hit a wall."
+      },
+      "ability3": {
+        "id": 3,
+        "name": "Fortify",
+        "description": "Orisa gains temporary health, takes reduced damage, and becomes resistant to movement effects."
+      },
+      "ability4": {
+        "id": 4,
+        "name": "Javelin Spin",
+        "description": "Spins the javelin to destroy projectiles, push enemies, and move forward faster."
+      },
+      "ability5": {
+        "id": 5,
+        "name": "Terra Surge",
+        "description": "Pulls in nearby enemies and charges a powerful area attack."
+      }
+    },
+    {
+      "id": 17,
+      "heroId": 17,
+      "hero": "Roadhog",
+      "ability1": {
+        "id": 1,
+        "name": "Scrap Gun",
+        "description": "Roadhog's short-range shotgun fires powerful scrap bursts."
+      },
+      "ability2": {
+        "id": 2,
+        "name": "Chain Hook",
+        "description": "Throws a hook that pulls an enemy toward Roadhog."
+      },
+      "ability3": {
+        "id": 3,
+        "name": "Take a Breather",
+        "description": "Roadhog heals himself and reduces incoming damage for a short time."
+      },
+      "ability4": {
+        "id": 4,
+        "name": "Pig Pen",
+        "description": "Places a trap that slows and damages enemies when triggered."
+      },
+      "ability5": {
+        "id": 5,
+        "name": "Whole Hog",
+        "description": "Fires a continuous stream of scrap that damages and knocks enemies back."
+      }
+    },
+    {
+      "id": 18,
+      "heroId": 18,
+      "hero": "Zarya",
+      "ability1": {
+        "id": 1,
+        "name": "Particle Cannon",
+        "description": "Zarya's weapon fires a short-range beam or explosive energy charges."
+      },
+      "ability2": {
+        "id": 2,
+        "name": "Energy",
+        "description": "Damage blocked by Zarya's barriers increases her weapon damage."
+      },
+      "ability3": {
+        "id": 3,
+        "name": "Particle Barrier",
+        "description": "Creates a barrier around Zarya that absorbs damage and builds energy."
+      },
+      "ability4": {
+        "id": 4,
+        "name": "Projected Barrier",
+        "description": "Creates a barrier around an ally that absorbs damage and builds energy."
+      },
+      "ability5": {
+        "id": 5,
+        "name": "Graviton Surge",
+        "description": "Launches a gravity bomb that pulls enemies together."
+      }
+    },
+    {
+      "id": 19,
+      "heroId": 19,
+      "hero": "Doomfist",
+      "ability1": {
+        "id": 1,
+        "name": "Hand Cannon",
+        "description": "Doomfist's short-range weapon fires shotgun-like bursts and reloads automatically."
+      },
+      "ability2": {
+        "id": 2,
+        "name": "Rocket Punch",
+        "description": "Charges forward with a powerful punch that knocks enemies back."
+      },
+      "ability3": {
+        "id": 3,
+        "name": "Seismic Slam",
+        "description": "Doomfist leaps and slams the ground, damaging enemies in an area."
+      },
+      "ability4": {
+        "id": 4,
+        "name": "Power Block",
+        "description": "Blocks frontal damage and empowers Rocket Punch after absorbing enough damage."
+      },
+      "ability5": {
+        "id": 5,
+        "name": "The Best Defense...",
+        "description": "Dealing damage with abilities grants Doomfist temporary health."
+      },
+      "ability6": {
+        "id": 6,
+        "name": "Meteor Strike",
+        "description": "Doomfist leaps into the sky and crashes down, damaging enemies in an area."
+      }
+    },
+    {
+      "id": 20,
+      "heroId": 20,
+      "hero": "Hazard",
+      "ability1": {
+        "id": 1,
+        "name": "Bonespur",
+        "description": "Hazard fires a spread of sharp spikes at enemies."
+      },
+      "ability2": {
+        "id": 2,
+        "name": "Jagged Wall",
+        "description": "Launches a spiked wall that sticks to surfaces and damages enemies."
+      },
+      "ability3": {
+        "id": 3,
+        "name": "Spike Guard",
+        "description": "Reduces incoming damage and fires spikes at nearby enemies."
+      },
+      "ability4": {
+        "id": 4,
+        "name": "Violent Leap",
+        "description": "Hazard leaps forward and slashes enemies on impact."
+      },
+      "ability5": {
+        "id": 5,
+        "name": "Vault",
+        "description": "Allows Hazard to climb over ledges and terrain for extra mobility."
+      },
+      "ability6": {
+        "id": 6,
+        "name": "Downpour",
+        "description": "Rains down spikes that damage and immobilize enemies in an area."
+      }
+    },
+    {
+      "id": 21,
+      "heroId": 21,
+      "hero": "Wrecking Ball",
+      "ability1": {
+        "id": 1,
+        "name": "Quad Cannons",
+        "description": "Wrecking Ball's automatic mech weapons deal sustained damage."
+      },
+      "ability2": {
+        "id": 2,
+        "name": "Roll",
+        "description": "Transforms into a ball and increases movement speed."
+      },
+      "ability3": {
+        "id": 3,
+        "name": "Grappling Claw",
+        "description": "Launches a claw to attach to surfaces and swing around the battlefield."
+      },
+      "ability4": {
+        "id": 4,
+        "name": "Piledriver",
+        "description": "Slams into the ground from the air, damaging and launching enemies upward."
+      },
+      "ability5": {
+        "id": 5,
+        "name": "Adaptive Shield",
+        "description": "Grants temporary health based on the number of nearby enemies."
+      },
+      "ability6": {
+        "id": 6,
+        "name": "Minefield",
+        "description": "Deploys a large field of proximity mines."
+      }
+    },
+    {
+      "id": 22,
+      "heroId": 22,
+      "hero": "Domina",
+      "ability1": {
+        "id": 1,
+        "name": "Reconstruction",
+        "description": "Domina restores shields when damaging enemies with abilities."
+      },
+      "ability2": {
+        "id": 2,
+        "name": "Photon Magnum",
+        "description": "Fires a medium-range hard-light beam that ends with a high-impact shot."
+      },
+      "ability3": {
+        "id": 3,
+        "name": "Barrier Array",
+        "description": "Constructs a segmented hard-light barrier."
+      },
+      "ability4": {
+        "id": 4,
+        "name": "Sonic Repulsors",
+        "description": "Pushes enemies back and can stun them if they hit a wall."
+      },
+      "ability5": {
+        "id": 5,
+        "name": "Crystal Charge",
+        "description": "Projects an explosive crystal that can be detonated manually."
+      },
+      "ability6": {
+        "id": 6,
+        "name": "Panopticon",
+        "description": "Fires a hard-light prison that traps enemies and detonates after a short time."
+      }
+    },
+    {
+      "id": 23,
+      "heroId": 23,
+      "hero": "Junker Queen",
+      "ability1": {
+        "id": 1,
+        "name": "Scattergun",
+        "description": "Junker Queen's pump-action shotgun deals heavy close-range damage."
+      },
+      "ability2": {
+        "id": 2,
+        "name": "Jagged Blade",
+        "description": "Throws a blade that can be recalled, pulling enemies it hits."
+      },
+      "ability3": {
+        "id": 3,
+        "name": "Commanding Shout",
+        "description": "Increases health and movement speed for Junker Queen and nearby allies."
+      },
+      "ability4": {
+        "id": 4,
+        "name": "Carnage",
+        "description": "Swings an axe to wound enemies and deal damage over time."
+      },
+      "ability5": {
+        "id": 5,
+        "name": "Adrenaline Rush",
+        "description": "Junker Queen heals from wound damage dealt to enemies."
+      },
+      "ability6": {
+        "id": 6,
+        "name": "Rampage",
+        "description": "Charges forward, wounding enemies and preventing them from being healed."
+      }
+    },
+    {
+      "id": 24,
+      "heroId": 24,
+      "hero": "Ramattra",
+      "ability1": {
+        "id": 1,
+        "name": "Void Accelerator",
+        "description": "Ramattra fires a stream of projectiles from his staff."
+      },
+      "ability2": {
+        "id": 2,
+        "name": "Void Barrier",
+        "description": "Creates a temporary barrier at a targeted location."
+      },
+      "ability3": {
+        "id": 3,
+        "name": "Nemesis Form",
+        "description": "Transforms Ramattra, giving him armor and powerful melee abilities."
+      },
+      "ability4": {
+        "id": 4,
+        "name": "Pummel",
+        "description": "Punches forward, sending a wave of energy through enemies."
+      },
+      "ability5": {
+        "id": 5,
+        "name": "Ravenous Vortex",
+        "description": "Launches a field that slows enemies and pulls them downward."
+      },
+      "ability6": {
+        "id": 6,
+        "name": "Block",
+        "description": "Reduces frontal damage while Ramattra is in Nemesis Form."
+      },
+      "ability7": {
+        "id": 7,
+        "name": "Annihilation",
+        "description": "Creates an energy swarm around Ramattra that damages nearby enemies."
+      }
+    },
+    {
+      "id": 25,
+      "heroId": 25,
+      "hero": "Anran",
+      "ability1": {
+        "id": 1,
+        "name": "Ignition",
+        "description": "Anran's fire attacks build ignition and burn enemies."
+      },
+      "ability2": {
+        "id": 2,
+        "name": "Zhuque Fans",
+        "description": "Throws fiery fan projectiles at enemies."
+      },
+      "ability3": {
+        "id": 3,
+        "name": "Fan the Flames",
+        "description": "Releases hot wind blasts that amplify burning damage."
+      },
+      "ability4": {
+        "id": 4,
+        "name": "Inferno Rush",
+        "description": "Propels Anran forward and damages enemies she collides with."
+      },
+      "ability5": {
+        "id": 5,
+        "name": "Dancing Blaze",
+        "description": "Dodges damage while striking nearby enemies and healing herself."
+      },
+      "ability6": {
+        "id": 6,
+        "name": "Vermillion Ascent",
+        "description": "Charges forward and explodes on impact, instantly igniting enemies."
+      }
+    },
+    {
+      "id": 26,
+      "heroId": 26,
+      "hero": "Vendetta",
+      "ability1": {
+        "id": 1,
+        "name": "Onslaught",
+        "description": "Striking enemies increases Vendetta's movement and attack speed."
+      },
+      "ability2": {
+        "id": 2,
+        "name": "Palatine Fang",
+        "description": "A hard-light greatsword that chains combo swings into a destructive overhead slash."
+      },
+      "ability3": {
+        "id": 3,
+        "name": "Warding Stance",
+        "description": "Blocks with the sword, reducing frontal damage and deflecting melee attacks."
+      },
+      "ability4": {
+        "id": 4,
+        "name": "Projected Edge",
+        "description": "Consumes energy during Warding Stance to fire a wide piercing projectile."
+      },
+      "ability5": {
+        "id": 5,
+        "name": "Whirlwind Dash",
+        "description": "Rushes forward into a circular slash that damages and knocks enemies."
+      },
+      "ability6": {
+        "id": 6,
+        "name": "Soaring Slice",
+        "description": "Throws the sword forward and flies toward it."
+      },
+      "ability7": {
+        "id": 7,
+        "name": "Sundering Blade",
+        "description": "Cleave through defenses and deal severe damage to enemies in front of Vendetta."
+      }
+    },
+    {
+      "id": 27,
+      "heroId": 27,
+      "hero": "Venture",
+      "ability1": {
+        "id": 1,
+        "name": "Smart Excavator",
+        "description": "Venture fires seismic charges from their drill weapon."
+      },
+      "ability2": {
+        "id": 2,
+        "name": "Drill Dash",
+        "description": "Dashes forward with the drill, damaging enemies in the path."
+      },
+      "ability3": {
+        "id": 3,
+        "name": "Burrow",
+        "description": "Moves underground and emerges to damage enemies."
+      },
+      "ability4": {
+        "id": 4,
+        "name": "Clobber",
+        "description": "Venture's quick melee deals increased damage."
+      },
+      "ability5": {
+        "id": 5,
+        "name": "Tectonic Shock",
+        "description": "Sends out damaging shockwaves in front of Venture."
+      }
+    },
+    {
+      "id": 28,
+      "heroId": 28,
+      "hero": "Echo",
+      "ability1": {
+        "id": 1,
+        "name": "Tri-Shot",
+        "description": "Echo fires three projectiles in a triangle pattern."
+      },
+      "ability2": {
+        "id": 2,
+        "name": "Sticky Bombs",
+        "description": "Fires sticky explosives that detonate after a short delay."
+      },
+      "ability3": {
+        "id": 3,
+        "name": "Flight",
+        "description": "Echo flies forward quickly and can glide afterward."
+      },
+      "ability4": {
+        "id": 4,
+        "name": "Focusing Beam",
+        "description": "Channels a beam that deals more damage to low-health enemies."
+      },
+      "ability5": {
+        "id": 5,
+        "name": "Glide",
+        "description": "Allows Echo to fall slowly while airborne."
+      },
+      "ability6": {
+        "id": 6,
+        "name": "Duplicate",
+        "description": "Copies an enemy hero and uses their abilities for a short time."
+      }
+    },
+    {
+      "id": 29,
+      "heroId": 29,
+      "hero": "Freja",
+      "ability1": {
+        "id": 1,
+        "name": "Sub-Role: Recon",
+        "description": "Freja detects enemies below half health through walls after damaging them."
+      },
+      "ability2": {
+        "id": 2,
+        "name": "Bounty Hunting",
+        "description": "Every three final blows grants Freja bonus ultimate charge."
+      },
+      "ability3": {
+        "id": 3,
+        "name": "Revdraw Crossbow",
+        "description": "Rapidly fires automatic bolts."
+      },
+      "ability4": {
+        "id": 4,
+        "name": "Take Aim",
+        "description": "Slows momentum to fire a high-speed explosive bolt; Quick Dash refreshes it."
+      },
+      "ability5": {
+        "id": 5,
+        "name": "Quick Dash",
+        "description": "Vaults in the movement direction and refreshes Take Aim."
+      },
+      "ability6": {
+        "id": 6,
+        "name": "Updraft",
+        "description": "Launches Freja upward with a gust of wind."
+      },
+      "ability7": {
+        "id": 7,
+        "name": "Bola Shot",
+        "description": "Fires an explosive bola that wraps an enemy and pulls in nearby enemies."
+      }
+    },
+    {
+      "id": 30,
+      "heroId": 30,
+      "hero": "Pharah",
+      "ability1": {
+        "id": 1,
+        "name": "Rocket Launcher",
+        "description": "Pharah fires long-range explosive rockets."
+      },
+      "ability2": {
+        "id": 2,
+        "name": "Jump Jet",
+        "description": "Launches Pharah rapidly upward."
+      },
+      "ability3": {
+        "id": 3,
+        "name": "Concussive Blast",
+        "description": "Fires an explosive blast that knocks enemies away."
+      },
+      "ability4": {
+        "id": 4,
+        "name": "Jet Dash",
+        "description": "Dashes horizontally in the direction Pharah is moving."
+      },
+      "ability5": {
+        "id": 5,
+        "name": "Hover Jets",
+        "description": "Allows Pharah to hover in the air by spending fuel."
+      },
+      "ability6": {
+        "id": 6,
+        "name": "Barrage",
+        "description": "Launches a continuous volley of rockets."
+      }
+    },
+    {
+      "id": 31,
+      "heroId": 31,
+      "hero": "Sierra",
+      "ability1": {
+        "id": 1,
+        "name": "Helix Rifle",
+        "description": "Sierra fires an automatic rifle with spiral projectiles that gain accuracy with sustained fire."
+      },
+      "ability2": {
+        "id": 2,
+        "name": "Tracking Shot",
+        "description": "Marks an enemy so Helix Rifle shots can track them."
+      },
+      "ability3": {
+        "id": 3,
+        "name": "Anchor Drone",
+        "description": "Launches a drone and reactivates it to pull Sierra toward it."
+      },
+      "ability4": {
+        "id": 4,
+        "name": "Tremor Charge",
+        "description": "Throws a charge that creates a damaging shockwave on impact."
+      },
+      "ability5": {
+        "id": 5,
+        "name": "Trailblazer",
+        "description": "Deploys a drone that flies forward and drops explosives."
+      }
+    },
+    {
+      "id": 32,
+      "heroId": 32,
+      "hero": "Sombra",
+      "ability1": {
+        "id": 1,
+        "name": "Machine Pistol",
+        "description": "Sombra's short-range automatic weapon deals rapid damage."
+      },
+      "ability2": {
+        "id": 2,
+        "name": "Hack",
+        "description": "Hacks enemies to interrupt abilities or hacks health packs for team advantage."
+      },
+      "ability3": {
+        "id": 3,
+        "name": "Virus",
+        "description": "Infects an enemy with a projectile that deals damage over time."
+      },
+      "ability4": {
+        "id": 4,
+        "name": "Stealth",
+        "description": "Makes Sombra invisible and increases movement speed while out of combat."
+      },
+      "ability5": {
+        "id": 5,
+        "name": "Translocator",
+        "description": "Throws a beacon and teleports Sombra to it."
+      },
+      "ability6": {
+        "id": 6,
+        "name": "Opportunist",
+        "description": "Allows Sombra to detect critically injured enemies through walls."
+      },
+      "ability7": {
+        "id": 7,
+        "name": "EMP",
+        "description": "Damages and hacks nearby enemies while disabling barriers."
+      }
+    },
+    {
+      "id": 33,
+      "heroId": 33,
+      "hero": "Ashe",
+      "ability1": {
+        "id": 1,
+        "name": "The Viper",
+        "description": "Ashe's semi-automatic rifle can aim down sights for stronger precision shots."
+      },
+      "ability2": {
+        "id": 2,
+        "name": "Coach Gun",
+        "description": "Blasts enemies away and knocks Ashe backward."
+      },
+      "ability3": {
+        "id": 3,
+        "name": "Dynamite",
+        "description": "Throws an explosive that burns enemies after detonation."
+      },
+      "ability4": {
+        "id": 4,
+        "name": "B.O.B.",
+        "description": "Summons B.O.B., who charges forward and attacks enemies."
+      }
+    },
+    {
+      "id": 34,
+      "heroId": 34,
+      "hero": "Cassidy",
+      "ability1": {
+        "id": 1,
+        "name": "Peacekeeper",
+        "description": "Cassidy's revolver fires precise shots or rapid fan-fire."
+      },
+      "ability2": {
+        "id": 2,
+        "name": "Combat Roll",
+        "description": "Rolls in the movement direction and reloads the weapon."
+      },
+      "ability3": {
+        "id": 3,
+        "name": "Flashbang",
+        "description": "Throws an explosive that hinders and damages enemies."
+      },
+      "ability4": {
+        "id": 4,
+        "name": "Deadeye",
+        "description": "Locks onto visible enemies and fires powerful shots."
+      }
+    },
+    {
+      "id": 35,
+      "heroId": 35,
+      "hero": "Hanzo",
+      "ability1": {
+        "id": 1,
+        "name": "Storm Bow",
+        "description": "Hanzo charges and fires arrows."
+      },
+      "ability2": {
+        "id": 2,
+        "name": "Sonic Arrow",
+        "description": "Reveals enemies near the arrow's impact location."
+      },
+      "ability3": {
+        "id": 3,
+        "name": "Storm Arrows",
+        "description": "Fires several arrows rapidly at reduced damage."
+      },
+      "ability4": {
+        "id": 4,
+        "name": "Lunge",
+        "description": "Allows Hanzo to perform a horizontal double jump."
+      },
+      "ability5": {
+        "id": 5,
+        "name": "Wall Climb",
+        "description": "Allows Hanzo to climb walls by jumping toward them."
+      },
+      "ability6": {
+        "id": 6,
+        "name": "Dragonstrike",
+        "description": "Launches spirit dragons that travel through enemies and terrain."
+      }
+    },
+    {
+      "id": 36,
+      "heroId": 36,
+      "hero": "Sojourn",
+      "ability1": {
+        "id": 1,
+        "name": "Railgun",
+        "description": "Sojourn fires rapid projectiles that generate energy for a powerful secondary shot."
+      },
+      "ability2": {
+        "id": 2,
+        "name": "Disruptor Shot",
+        "description": "Launches an energy field that slows and damages enemies."
+      },
+      "ability3": {
+        "id": 3,
+        "name": "Power Slide",
+        "description": "Slides along the ground and can cancel into a high jump."
+      },
+      "ability4": {
+        "id": 4,
+        "name": "Overclock",
+        "description": "Automatically charges Railgun energy and allows charged shots to pierce enemies."
+      }
+    },
+    {
+      "id": 37,
+      "heroId": 37,
+      "hero": "Widowmaker",
+      "ability1": {
+        "id": 1,
+        "name": "Widow's Kiss",
+        "description": "Widowmaker's weapon works as an automatic rifle or a scoped sniper rifle."
+      },
+      "ability2": {
+        "id": 2,
+        "name": "Grappling Hook",
+        "description": "Launches a hook that pulls Widowmaker toward a ledge or surface."
+      },
+      "ability3": {
+        "id": 3,
+        "name": "Venom Mine",
+        "description": "Deploys a poison mine that damages enemies who trigger it."
+      },
+      "ability4": {
+        "id": 4,
+        "name": "Infra-Sight",
+        "description": "Reveals enemy positions to Widowmaker's team."
+      }
+    },
+    {
+      "id": 38,
+      "heroId": 38,
+      "hero": "Bastion",
+      "ability1": {
+        "id": 1,
+        "name": "Configuration: Assault",
+        "description": "Transforms Bastion into a mobile minigun mode for heavy sustained damage."
+      },
+      "ability2": {
+        "id": 2,
+        "name": "Configuration: Recon",
+        "description": "Bastion's mobile form uses a precise automatic weapon."
+      },
+      "ability3": {
+        "id": 3,
+        "name": "A-36 Tactical Grenade",
+        "description": "Fires a grenade that bounces and explodes."
+      },
+      "ability4": {
+        "id": 4,
+        "name": "Reconfigure",
+        "description": "Switches Bastion between weapon configurations."
+      },
+      "ability5": {
+        "id": 5,
+        "name": "Configuration: Artillery",
+        "description": "Fires up to three long-range artillery shells from above."
+      }
+    },
+    {
+      "id": 39,
+      "heroId": 39,
+      "hero": "Emre",
+      "ability1": {
+        "id": 1,
+        "name": "Altered Vitals",
+        "description": "Emre's passive regeneration activates sooner and restores health when it begins."
+      },
+      "ability2": {
+        "id": 2,
+        "name": "Synthetic Burst Rifle",
+        "description": "Fires three-round bursts from Emre's rifle."
+      },
+      "ability3": {
+        "id": 3,
+        "name": "Synthetic Burst Rifle (ADS)",
+        "description": "Aims down sights for more accurate burst fire."
+      },
+      "ability4": {
+        "id": 4,
+        "name": "Siphon Blaster",
+        "description": "Temporarily uses a lifestealing explosive pistol and gains movement speed."
+      },
+      "ability5": {
+        "id": 5,
+        "name": "Cyber Frag",
+        "description": "Throws a grenade that detonates shortly after bouncing."
+      },
+      "ability6": {
+        "id": 6,
+        "name": "Override Protocol",
+        "description": "Transforms Emre into an airborne living weapon with explosive rounds."
+      }
+    },
+    {
+      "id": 40,
+      "heroId": 40,
+      "hero": "Junkrat",
+      "ability1": {
+        "id": 1,
+        "name": "Frag Launcher",
+        "description": "Junkrat launches bouncing grenades."
+      },
+      "ability2": {
+        "id": 2,
+        "name": "Concussion Mine",
+        "description": "Throws a mine that can damage enemies or propel Junkrat."
+      },
+      "ability3": {
+        "id": 3,
+        "name": "Steel Trap",
+        "description": "Places a trap that immobilizes enemies."
+      },
+      "ability4": {
+        "id": 4,
+        "name": "Total Mayhem",
+        "description": "Junkrat takes no damage from his own explosives and drops bombs on death."
+      },
+      "ability5": {
+        "id": 5,
+        "name": "RIP-Tire",
+        "description": "Controls an explosive tire and detonates it manually."
+      }
+    },
+    {
+      "id": 41,
+      "heroId": 41,
+      "hero": "Mei",
+      "ability1": {
+        "id": 1,
+        "name": "Endothermic Blaster",
+        "description": "Mei sprays frost to damage and slow enemies or fires icicles at range."
+      },
+      "ability2": {
+        "id": 2,
+        "name": "Cryo-Freeze",
+        "description": "Mei becomes invulnerable and heals herself inside ice."
+      },
+      "ability3": {
+        "id": 3,
+        "name": "Ice Wall",
+        "description": "Creates a wall of ice pillars that block movement and attacks."
+      },
+      "ability4": {
+        "id": 4,
+        "name": "Blizzard",
+        "description": "Deploys a weather drone that freezes enemies in an area."
+      }
+    },
+    {
+      "id": 42,
+      "heroId": 42,
+      "hero": "Symmetra",
+      "ability1": {
+        "id": 1,
+        "name": "Photon Projector",
+        "description": "Symmetra's beam grows stronger with sustained contact and can fire charged orbs."
+      },
+      "ability2": {
+        "id": 2,
+        "name": "Sentry Turret",
+        "description": "Deploys small turrets that damage and slow enemies."
+      },
+      "ability3": {
+        "id": 3,
+        "name": "Teleporter",
+        "description": "Creates a temporary teleporter between two locations."
+      },
+      "ability4": {
+        "id": 4,
+        "name": "Photon Barrier",
+        "description": "Deploys a massive energy barrier that spans the battlefield."
+      }
+    },
+    {
+      "id": 43,
+      "heroId": 43,
+      "hero": "Torbjörn",
+      "ability1": {
+        "id": 1,
+        "name": "Rivet Gun",
+        "description": "Torbjörn fires long-range rivets or short-range molten bursts."
+      },
+      "ability2": {
+        "id": 2,
+        "name": "Forge Hammer",
+        "description": "Repairs turrets or strikes enemies at close range."
+      },
+      "ability3": {
+        "id": 3,
+        "name": "Deploy Turret",
+        "description": "Places an automated turret that attacks enemies."
+      },
+      "ability4": {
+        "id": 4,
+        "name": "Overload",
+        "description": "Grants armor, attack speed, reload speed, and movement speed."
+      },
+      "ability5": {
+        "id": 5,
+        "name": "Molten Core",
+        "description": "Creates pools of molten slag that damage enemies."
+      }
+    },
+    {
+      "id": 44,
+      "heroId": 44,
+      "hero": "Lifeweaver",
+      "ability1": {
+        "id": 1,
+        "name": "Healing Blossom",
+        "description": "Lifeweaver charges and releases healing for allies."
+      },
+      "ability2": {
+        "id": 2,
+        "name": "Thorn Volley",
+        "description": "Fires a spread of thorns to damage enemies."
+      },
+      "ability3": {
+        "id": 3,
+        "name": "Petal Platform",
+        "description": "Throws a platform that rises when stepped on."
+      },
+      "ability4": {
+        "id": 4,
+        "name": "Rejuvenating Dash",
+        "description": "Dashes in the movement direction and heals Lifeweaver."
+      },
+      "ability5": {
+        "id": 5,
+        "name": "Life Grip",
+        "description": "Pulls an ally to Lifeweaver's position while protecting them."
+      },
+      "ability6": {
+        "id": 6,
+        "name": "Tree of Life",
+        "description": "Places a tree that heals allies in pulses."
+      }
+    },
+    {
+      "id": 45,
+      "heroId": 45,
+      "hero": "Moira",
+      "ability1": {
+        "id": 1,
+        "name": "Biotic Grasp",
+        "description": "Moira uses biotic energy to heal allies or damage enemies and restore energy."
+      },
+      "ability2": {
+        "id": 2,
+        "name": "Biotic Orb",
+        "description": "Launches a bouncing orb that heals allies or damages enemies."
+      },
+      "ability3": {
+        "id": 3,
+        "name": "Fade",
+        "description": "Moira disappears, moves faster, and becomes invulnerable briefly."
+      },
+      "ability4": {
+        "id": 4,
+        "name": "Coalescence",
+        "description": "Fires a long beam that heals allies and damages enemies."
+      }
+    },
+    {
+      "id": 46,
+      "heroId": 46,
+      "hero": "Brigitte",
+      "ability1": {
+        "id": 1,
+        "name": "Rocket Flail",
+        "description": "Brigitte's melee weapon has extended range."
+      },
+      "ability2": {
+        "id": 2,
+        "name": "Repair Pack",
+        "description": "Heals an ally over a short duration."
+      },
+      "ability3": {
+        "id": 3,
+        "name": "Whip Shot",
+        "description": "Throws the flail forward to knock enemies away."
+      },
+      "ability4": {
+        "id": 4,
+        "name": "Barrier Shield",
+        "description": "Holds up a frontal energy barrier."
+      },
+      "ability5": {
+        "id": 5,
+        "name": "Shield Bash",
+        "description": "Dashes forward with the barrier to damage and knock enemies back."
+      },
+      "ability6": {
+        "id": 6,
+        "name": "Inspire",
+        "description": "Dealing damage heals nearby allies over time."
+      },
+      "ability7": {
+        "id": 7,
+        "name": "Rally",
+        "description": "Provides extra health to nearby allies and empowers Brigitte's shield."
+      }
+    },
+    {
+      "id": 47,
+      "heroId": 47,
+      "hero": "Illari",
+      "ability1": {
+        "id": 1,
+        "name": "Solar Rifle",
+        "description": "Illari's rifle charges for stronger shots and uses solar energy to heal allies."
+      },
+      "ability2": {
+        "id": 2,
+        "name": "Healing Pylon",
+        "description": "Deploys a pylon that heals nearby allies."
+      },
+      "ability3": {
+        "id": 3,
+        "name": "Outburst",
+        "description": "Launches Illari in a direction and knocks back nearby enemies."
+      },
+      "ability4": {
+        "id": 4,
+        "name": "Captive Sun",
+        "description": "Fires an explosive solar projectile that slows enemies and causes them to explode after taking damage."
+      }
+    },
+    {
+      "id": 48,
+      "heroId": 48,
+      "hero": "Mizuki",
+      "ability1": {
+        "id": 1,
+        "name": "Remedy Aura",
+        "description": "Mizuki emits an aura that heals nearby allies."
+      },
+      "ability2": {
+        "id": 2,
+        "name": "Spirit Glaive",
+        "description": "Throws a glaive that damages enemies."
+      },
+      "ability3": {
+        "id": 3,
+        "name": "Healing Kasa",
+        "description": "Uses Mizuki's kasa to heal allies in front of her."
+      },
+      "ability4": {
+        "id": 4,
+        "name": "Katashiro Return",
+        "description": "Returns to a marked location after a short delay."
+      },
+      "ability5": {
+        "id": 5,
+        "name": "Binding Chain",
+        "description": "Throws a chain that links enemies and restricts their movement."
+      },
+      "ability6": {
+        "id": 6,
+        "name": "Kekkai Sanctuary",
+        "description": "Creates a protective sanctuary that supports allies inside its area."
+      }
+    },
+    {
+      "id": 49,
+      "heroId": 49,
+      "hero": "Wuyang",
+      "ability1": {
+        "id": 1,
+        "name": "Xuanwu Staff",
+        "description": "Wuyang uses a water staff to damage enemies and interact with healing abilities."
+      },
+      "ability2": {
+        "id": 2,
+        "name": "Restorative Stream",
+        "description": "Channels a stream of water that heals allies."
+      },
+      "ability3": {
+        "id": 3,
+        "name": "Rushing Torrent",
+        "description": "Moves quickly on a surge of water."
+      },
+      "ability4": {
+        "id": 4,
+        "name": "Guardian Wave",
+        "description": "Sends out a wave that protects allies and pushes threats away."
+      },
+      "ability5": {
+        "id": 5,
+        "name": "Tidal Blast",
+        "description": "Launches a powerful water blast that affects targets in an area."
+      }
+    },
+    {
+      "id": 50,
+      "heroId": 50,
+      "hero": "Baptiste",
+      "ability1": {
+        "id": 1,
+        "name": "Biotic Launcher",
+        "description": "Baptiste's weapon fires burst shots and healing grenades."
+      },
+      "ability2": {
+        "id": 2,
+        "name": "Regenerative Burst",
+        "description": "Heals Baptiste and nearby allies over time."
+      },
+      "ability3": {
+        "id": 3,
+        "name": "Immortality Field",
+        "description": "Deploys a device that prevents allies inside from dying."
+      },
+      "ability4": {
+        "id": 4,
+        "name": "Exo Boots",
+        "description": "Crouches to charge a higher jump."
+      },
+      "ability5": {
+        "id": 5,
+        "name": "Amplification Matrix",
+        "description": "Creates a matrix that doubles allied projectile damage and healing passing through it."
+      }
+    },
+    {
+      "id": 51,
+      "heroId": 51,
+      "hero": "Jetpack Cat",
+      "ability1": {
+        "id": 1,
+        "name": "Jetpack",
+        "description": "Allows Jetpack Cat to stay in permanent flight."
+      },
+      "ability2": {
+        "id": 2,
+        "name": "Biotic Pawjectiles",
+        "description": "Fires projectiles that heal allies and damage enemies."
+      },
+      "ability3": {
+        "id": 3,
+        "name": "Frenetic Flight",
+        "description": "Boosts Jetpack Cat's aerial movement speed."
+      },
+      "ability4": {
+        "id": 4,
+        "name": "Lifeline",
+        "description": "Connects to an ally to support or reposition around them."
+      },
+      "ability5": {
+        "id": 5,
+        "name": "Purr",
+        "description": "Provides healing or support to nearby allies."
+      },
+      "ability6": {
+        "id": 6,
+        "name": "Catnapper",
+        "description": "Uses a special projectile or area effect to disrupt enemies."
+      }
+    }
+  ]
+}
