@@ -5,28 +5,53 @@
       "login": "Abnersolk",
       "senha": "123456",
       "fotoPerfil": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ff5c54f43ad253c7faeda9c4ed31d42582ea6b19205d197866f3dd0c0aa14c16.png",
-      "id": 1
+      "id": 1,
+      "admin": true,
+      "fav": [
+        13,
+        19,
+        42,
+        32,
+        29,
+        49,
+        39
+      ]
     },
     {
       "nome": "Hannah Almeida",
       "login": "Hannahsolk",
       "senha": "Hannah123",
       "fotoPerfil": "https://static.wikia.nocookie.net/overwatch_gamepedia/images/1/19/Icon-D.Va.png/revision/latest/scale-to-width-down/250?cb=20221005161600",
-      "id": 2
+      "id": 2,
+      "admin": false,
+      "fav": []
     },
     {
       "nome": "Alice Cordeiro Diniz",
       "login": "AlicinhaGamer67",
       "senha": "1234567",
       "fotoPerfil": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/03a184cd0de27091e0099ac22635ad9615a8f6997881a5c25cc5f2444764f729.png",
-      "id": 3
+      "id": 3,
+      "admin": false,
+      "fav": []
     },
     {
       "nome": "Michel",
       "login": "Michelxps",
       "senha": "123456",
       "fotoPerfil": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d4e6f1ca45d9f88fa89260787397f141a6f007b14e5b26698883b6a17bab9680.png",
-      "id": 4
+      "id": 4,
+      "admin": false,
+      "fav": []
+    },
+    {
+      "nome": "Benício Cordeiro Diniz",
+      "login": "Beni67",
+      "senha": "12345678",
+      "fotoPerfil": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/040bb13f5123ab93faad2f95627ba184608aef4b2469a4d3003859c7087df044.png",
+      "id": 5,
+      "admin": false,
+      "fav": []
     }
   ],
   "heroes": [

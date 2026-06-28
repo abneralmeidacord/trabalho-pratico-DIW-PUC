@@ -572,6 +572,45 @@ html {
     text-transform: uppercase;
 }
 
+.favorite-box {
+    min-width: 160px;
+    padding: 16px 20px;
+    border-radius: 16px;
+    background-color: #fefefe;
+    border: 2px solid #405275;
+    border-left: 6px solid #f99e1a;
+    color: #43484c;
+    text-align: left;
+}
+
+.favorite-box i {
+    margin-right: 8px;
+    font-size: 1.5rem;
+    color: #405275;
+}
+
+.favorite-box.is-favorite i {
+    color: #f99e1a;
+}
+
+.favorite-button {
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.favorite-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.16);
+}
+
+.favorite-signin p {
+    margin: 8px 0 0;
+    color: #43484c;
+    font-size: 0.85rem;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
 .details-button {
     display: inline-flex;
     align-items: center;
@@ -756,6 +795,7 @@ html {
     }
 
     .details-meta div,
+    .favorite-box,
     .details-button {
         width: 100%;
     }
@@ -1220,7 +1260,7 @@ html {
     margin: 0;
 }
 
-/* Responsividade */
+/* Responsividade auth */
 @media (max-width: 900px) {
     .auth-page .navbar-auth {
         width: 94%;
@@ -1343,7 +1383,6 @@ html {
     object-fit: cover;
     border-radius: 50%;
     border: 2px solid #f99e1a;
-    background-color: #fefefe;
 }
 
 .nome-usuario {
@@ -1424,5 +1463,5 @@ html {
     object-fit: cover;
     border-radius: 50%;
     border: 2px solid #f99e1a;
-    background-color: #fefefe;
+    background-color: #c8ddf8;
 }

@@ -259,6 +259,107 @@ function renderHeroesChart(heroes) {
   });
 }
 
+/* Monta o visual do botão/aviso de favorito */
+function montarFavoritoHTML(heroId) {
+  const usuarioLogado = pegarUsuarioLogado();
+
+  if (!usuarioLogado) {
+    return `
+      <div id="favorite-area" class="favorite-box favorite-signin">
+        <strong>
+          <i class="bi bi-star"></i>
+        </strong>
+        <p>Sign in to be able to favorite heroes</p>
+      </div>
+    `;
+  }
+
+  const fav = Array.isArray(usuarioLogado.fav) ? usuarioLogado.fav : [];
+  const isFav = fav.map(Number).includes(Number(heroId));
+
+  return `
+    <button type="button" id="favorite-area" class="favorite-box favorite-button ${isFav ? "is-favorite" : ""}">
+      <strong>
+        <i class="bi ${isFav ? "bi-star-fill" : "bi-star"}"></i>
+        ${isFav ? "Favorited" : "Favorite"}
+      </strong>
+    </button>
+  `;
+}
+
+/* Adiciona ou remove o herói dos fav do usuário logado */
+async function alternarFavorito(heroId) {
+  const usuarioLogado = pegarUsuarioLogado();
+
+  if (!usuarioLogado) {
+    return;
+  }
+
+  const favoritosAtuais = Array.isArray(usuarioLogado.fav)
+    ? usuarioLogado.fav.map(Number)
+    : [];
+  const isFav = favoritosAtuais.includes(Number(heroId));
+
+  let novosFavoritos;
+
+  if (isFav) {
+    novosFavoritos = favoritosAtuais.filter(function (idFavorito) {
+      return idFavorito !== Number(heroId);
+    });
+  } else {
+    novosFavoritos = [...favoritosAtuais, Number(heroId)];
+  }
+
+  try {
+    const resposta = await fetch(`${URL_BASE}/users/${usuarioLogado.id}`, {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        fav: novosFavoritos,
+      }),
+    });
+
+    if (!resposta.ok) {
+      throw new Error("Erro ao atualizar fav");
+    }
+
+    const usuarioAtualizado = await resposta.json();
+
+    sessionStorage.setItem("usuarioLogado", JSON.stringify(usuarioAtualizado));
+    atualizarFavoritoNaTela(heroId);
+  } catch (erro) {
+    console.error("Erro ao favoritar herói:", erro);
+    alert("Could not update favorite. Check if json-server is running.");
+  }
+}
+
+/* Atualiza só o botão/aviso de favorito depois do clique */
+function atualizarFavoritoNaTela(heroId) {
+  const areaFavorito = document.getElementById("favorite-area");
+
+  if (!areaFavorito) {
+    return;
+  }
+
+  areaFavorito.outerHTML = montarFavoritoHTML(heroId);
+  configurarBotaoFavorito(heroId);
+}
+
+/* Coloca o evento de clique no botão de favorito */
+function configurarBotaoFavorito(heroId) {
+  const btnFav = document.getElementById("favorite-area");
+
+  if (!btnFav || btnFav.tagName !== "BUTTON") {
+    return;
+  }
+
+  btnFav.addEventListener("click", function () {
+    alternarFavorito(heroId);
+  });
+}
+
 /* Função assíncrona para renderizar os detalhes do herói selecionado vindos da home e do json-server*/
 async function renderHeroDetails() {
   /* Tenta carregar, se não carregar dá um erro de busca da habilidade do herói, e se não encontrar nenhum herói e nem a habilidade dá erro de herói inválido */
@@ -323,15 +424,16 @@ async function renderHeroDetails() {
             <p class="details-tag">Hero Profile</p>
             <h1>${selectedHero.hero}</h1>
             <div class="details-meta">
-              <div>
-                <span>Class</span>
-                <strong>${formatText(selectedHero.hero_class)}</strong>
-              </div>
-              <div>
-                <span>Role</span>
-                <strong>${formatText(selectedHero.hero_func)}</strong>
-              </div>
+            <div>
+              <span>Class</span>
+              <strong>${formatText(selectedHero.hero_class)}</strong>
             </div>
+            <div>
+              <span>Role</span>
+              <strong>${formatText(selectedHero.hero_func)}</strong>
+            </div>
+            ${montarFavoritoHTML(selectedHero.id)}
+          </div>
             <a class="details-button" href="index.html#heroes">Back to heroes</a>
           </div>
         </div>
@@ -344,6 +446,8 @@ async function renderHeroDetails() {
         </div>
       </article>
     `;
+
+    configurarBotaoFavorito(selectedHero.id);
   } catch (erro) {
     /* Erro de carregamento no card de habilidades */
     console.error("Erro ao carregar habilidades do herói:", erro);
@@ -372,107 +476,103 @@ if (heroDetailsWrapper) {
   renderHeroDetails();
 }
 
-
 /* Essa variável guarda o avatar escolhido pelo usuário */
 let avatarEscolhido = "";
 
-
 /* Função para mostrar mensagens de erro na tela */
 function mostrarErro(mensagem) {
-    const msgErro = document.getElementById("msg-erro");
-    const msgSucesso = document.getElementById("msg-sucesso");
+  const msgErro = document.getElementById("msg-erro");
+  const msgSucesso = document.getElementById("msg-sucesso");
 
-    if (msgErro) {
-        msgErro.textContent = mensagem;
-        msgErro.style.display = "block";
-    }
+  if (msgErro) {
+    msgErro.textContent = mensagem;
+    msgErro.style.display = "block";
+  }
 
-    if (msgSucesso) {
-        msgSucesso.style.display = "none";
-    }
+  if (msgSucesso) {
+    msgSucesso.style.display = "none";
+  }
 }
-
 
 /* Função para mostrar mensagens de sucesso na tela */
 function mostrarSucesso(mensagem) {
-    const msgErro = document.getElementById("msg-erro");
-    const msgSucesso = document.getElementById("msg-sucesso");
+  const msgErro = document.getElementById("msg-erro");
+  const msgSucesso = document.getElementById("msg-sucesso");
 
-    if (msgSucesso) {
-        msgSucesso.textContent = mensagem;
-        msgSucesso.style.display = "block";
-    }
+  if (msgSucesso) {
+    msgSucesso.textContent = mensagem;
+    msgSucesso.style.display = "block";
+  }
 
-    if (msgErro) {
-        msgErro.style.display = "none";
-    }
+  if (msgErro) {
+    msgErro.style.display = "none";
+  }
 }
-
 
 /* Função para mostrar ou esconder a senha */
 function toggleSenha(idCampo, botao) {
-    const campoSenha = document.getElementById(idCampo);
+  const campoSenha = document.getElementById(idCampo);
 
-    if (campoSenha.type === "password") {
-        campoSenha.type = "text";
-        botao.textContent = "🙈";
-    } else {
-        campoSenha.type = "password";
-        botao.textContent = "👁";
-    }
+  if (campoSenha.type === "password") {
+    campoSenha.type = "text";
+    botao.textContent = "🙈";
+  } else {
+    campoSenha.type = "password";
+    botao.textContent = "👁";
+  }
 }
-
 
 /* Função que faz o login do usuário */
 async function fazerLogin(evento) {
-    evento.preventDefault();
+  evento.preventDefault();
 
-    const login = document.getElementById("login").value.trim();
-    const senha = document.getElementById("senha").value.trim();
-    const btnLogin = document.getElementById("btn-login");
+  const login = document.getElementById("login").value.trim();
+  const senha = document.getElementById("senha").value.trim();
+  const btnLogin = document.getElementById("btn-login");
 
-    /* Validação simples dos campos */
-    if (login === "" || senha === "") {
-        mostrarErro("Please fill in all fields.");
-        return;
+  /* Validação simples dos campos */
+  if (login === "" || senha === "") {
+    mostrarErro("Please fill in all fields.");
+    return;
+  }
+
+  btnLogin.disabled = true;
+  btnLogin.textContent = "Logging in...";
+
+  try {
+    const resposta = await fetch(`${URL_BASE}/usuarios?login=${login}`);
+    const usuarios = await resposta.json();
+
+    /* Procura um usuário com o mesmo login e senha */
+    const usuarioEncontrado = usuarios.find(function (usuario) {
+      return usuario.login === login && usuario.senha === senha;
+    });
+
+    if (!usuarioEncontrado) {
+      mostrarErro("Incorrect username or password.");
+
+      btnLogin.disabled = false;
+      btnLogin.textContent = "Log In →";
+
+      return;
     }
 
-    btnLogin.disabled = true;
-    btnLogin.textContent = "Logging in...";
+    /* Salva o usuário logado na sessão do navegador */
+    sessionStorage.setItem("usuarioLogado", JSON.stringify(usuarioEncontrado));
 
-    try {
-        const resposta = await fetch(`${URL_BASE}/usuarios?login=${login}`);
-        const usuarios = await resposta.json();
+    mostrarSucesso("Login successful!");
 
-        /* Procura um usuário com o mesmo login e senha */
-        const usuarioEncontrado = usuarios.find(function (usuario) {
-            return usuario.login === login && usuario.senha === senha;
-        });
+    setTimeout(function () {
+      window.location.href = "index.html";
+    }, 1000);
+  } catch (erro) {
+    mostrarErro(
+      "Could not connect to the server. Check if json-server is running.",
+    );
 
-        if (!usuarioEncontrado) {
-            mostrarErro("Incorrect username or password.");
-
-            btnLogin.disabled = false;
-            btnLogin.textContent = "Log In →";
-
-            return;
-        }
-
-        /* Salva o usuário logado na sessão do navegador */
-        sessionStorage.setItem("usuarioLogado", JSON.stringify(usuarioEncontrado));
-
-        mostrarSucesso("Login successful!");
-
-        setTimeout(function () {
-            window.location.href = "index.html";
-        }, 1000);
-
-    } catch (erro) {
-        mostrarErro("Could not connect to the server. Check if json-server is running.");
-
-        btnLogin.disabled = false;
-        btnLogin.textContent = "Log In →";
-    }
+    btnLogin.disabled = false;
+    btnLogin.textContent = "Log In →";
+  }
 }
 
 /* Função para pegar o usuário que está salvo na sessão */
