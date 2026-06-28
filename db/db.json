@@ -39,7 +39,12 @@
       "fotoPerfil": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/03a184cd0de27091e0099ac22635ad9615a8f6997881a5c25cc5f2444764f729.png",
       "id": 3,
       "admin": false,
-      "fav": []
+      "fav": [
+        51,
+        8,
+        46,
+        41
+      ]
     },
     {
       "nome": "Michel",
@@ -58,6 +63,23 @@
       "id": 5,
       "admin": false,
       "fav": []
+    },
+    {
+      "nome": "Gael Cordeiro Diniz",
+      "login": "Gael1000deAura",
+      "senha": "SIIIU",
+      "fotoPerfil": "https://static.wikia.nocookie.net/overwatch_gamepedia/images/1/1c/Icon-Genji.png/revision/latest/scale-to-width-down/250?cb=20221005165931",
+      "fav": [
+        4,
+        8,
+        51,
+        37,
+        38,
+        35,
+        7,
+        5
+      ],
+      "id": 6
     }
   ],
   "heroes": [

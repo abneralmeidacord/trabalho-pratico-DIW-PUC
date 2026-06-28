@@ -271,8 +271,9 @@ function montarFavoritoHTML(heroId) {
       <div id="favorite-area" class="favorite-box favorite-signin">
         <strong>
           <i class="bi bi-star"></i>
+          Sign in to be able to favorite heroes
         </strong>
-        <p>Sign in to be able to favorite heroes</p>
+        <p></p>
       </div>
     `;
   }

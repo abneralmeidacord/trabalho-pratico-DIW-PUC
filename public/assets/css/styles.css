@@ -614,11 +614,22 @@ html {
 
 .favorite-signin p {
     margin: 8px 0 0;
-    color: #43484c;
+    color: #fefefe;
     font-size: 0.85rem;
     font-weight: 800;
     line-height: 1.2;
 }
+
+.favorite-box.favorite-signin {
+  background-color: #43484c;
+}
+
+.favorite-box.favorite-signin  i {
+    margin-right: 8px;
+    font-size: 1.5rem;
+    color: #f99e1a;
+}
+
 
 .details-button {
     display: inline-flex;
