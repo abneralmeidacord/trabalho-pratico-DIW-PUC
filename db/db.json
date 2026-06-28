@@ -13,6 +13,20 @@
       "senha": "Hannah123",
       "fotoPerfil": "https://static.wikia.nocookie.net/overwatch_gamepedia/images/1/19/Icon-D.Va.png/revision/latest/scale-to-width-down/250?cb=20221005161600",
       "id": 2
+    },
+    {
+      "nome": "Alice Cordeiro Diniz",
+      "login": "AlicinhaGamer67",
+      "senha": "1234567",
+      "fotoPerfil": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/03a184cd0de27091e0099ac22635ad9615a8f6997881a5c25cc5f2444764f729.png",
+      "id": 3
+    },
+    {
+      "nome": "Michel",
+      "login": "Michelxps",
+      "senha": "123456",
+      "fotoPerfil": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d4e6f1ca45d9f88fa89260787397f141a6f007b14e5b26698883b6a17bab9680.png",
+      "id": 4
     }
   ],
   "heroes": [
@@ -35,7 +49,7 @@
       "hero": "Mercy",
       "hero_img": "https://static.wikia.nocookie.net/overwatch_gamepedia/images/0/03/Icon-Mercy.png/revision/latest/scale-to-width-down/250?cb=20221005160926",
       "hero_class": "support",
-      "hero_func": "healer"
+      "hero_func": "medic"
     },
     {
       "id": 4,
