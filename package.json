@@ -18,6 +18,8 @@
 
   "dependencies": {
 
+    "bootstrap-icons": "^1.13.1",
+
     "chart.js": "^4.5.1",
 
     "json-server": "^0.17.0"
