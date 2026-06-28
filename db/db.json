@@ -439,6 +439,13 @@
       "hero_img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/03a184cd0de27091e0099ac22635ad9615a8f6997881a5c25cc5f2444764f729.png",
       "hero_class": "support",
       "hero_func": "tactician"
+    },
+    {
+      "id": 52,
+      "hero": "Shion",
+      "hero_img": "https://static.wikia.nocookie.net/overwatch_gamepedia/images/7/74/Icon-Shion.png/revision/latest?cb=20260616181841",
+      "hero_class": "damage",
+      "hero_func": "flanker"
     }
   ],
   "details": [
@@ -2070,6 +2077,36 @@
         "id": 6,
         "name": "Catnapper",
         "description": "Uses a special projectile or area effect to disrupt enemies."
+      }
+    },
+    {
+      "id": 52,
+      "heroId": 52,
+      "hero": "Shion",
+      "ability1": {
+        "id": 1,
+        "name": "Kira Pistols",
+        "description": "Uses rapid-fire anima pistols to deal damage to enemies."
+      },
+      "ability2": {
+        "id": 2,
+        "name": "Execution",
+        "description": "Fires an X-shaped volley of shots. Holding the ability tightens its spread."
+      },
+      "ability3": {
+        "id": 3,
+        "name": "Evade",
+        "description": "Dashes in the direction Shion is moving and briefly grants overhealth."
+      },
+      "ability4": {
+        "id": 4,
+        "name": "Joyride",
+        "description": "Lets Shion ride forward on a bike, then launch it to damage enemies."
+      },
+      "ability5": {
+        "id": 5,
+        "name": "Satsuriku Spree",
+        "description": "Shion rushes forward three times while firing at nearby enemies."
       }
     }
   ]
