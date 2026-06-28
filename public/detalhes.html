@@ -18,13 +18,22 @@
 <body class="details-page d-flex flex-column align-items-center w-100">
     <!-- Navbar interativa que dá scroll para sections específicas do site -->
     <header>
-        <nav class="d-flex flex-row justify-content-evenly align-items-center w-100 gap-3">
-            <h1><a href="index.html"><span>HOME</span></a></h1>
-            <h1><a href="index.html#heroes">HEROES</a></h1>
-            <h1><a href="index.html#story">STORY</a></h1>
+        <nav>
+            <div class="header-menu d-flex flex-row justify-content-evenly align-items-center h-100">
+                <h1><a href="index.html"><span>HOME</span></a></h1>
+                <h1><a href="index.html#heroes">HEROES</a></h1>
+                <h1><a href="index.html#story">STORY</a></h1>
+            </div>
+
+            <div id="area-usuario" class="header-user-area d-flex align-items-center justify-content-center h-100">
+                <a class="header-button d-flex align-items-center justify-content-center text-decoration-none"
+                    href="./login.html">
+                    <p class="mb-0">Login</p>
+                </a>
+            </div>
         </nav>
     </header>
-    
+
     <!-- Wrapper pra mapping de detalhes e habilidades dos heróis que vem do json-server -->
     <main class="hero-details-main w-100 d-flex justify-content-center">
         <section class="hero-details-container" id="hero-details">

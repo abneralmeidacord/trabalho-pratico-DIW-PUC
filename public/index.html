@@ -22,10 +22,19 @@
     <main class="banner w-100 d-flex flex-column align-items-center">
         <!-- Navbar interativa que dá scroll para sections específicas do site -->
         <header>
-            <nav class="d-flex flex-row justify-content-evenly align-items-center w-100 gap-3">
-                <h1><a href="index.html"><span>HOME</span></a></h1>
-                <h1><a href="#heroes">HEROES</a></h1>
-                <h1><a href="#story">STORY</a></h1>
+            <nav>
+                <div class="header-menu d-flex flex-row justify-content-evenly align-items-center h-100">
+                    <h1><a href="index.html"><span>HOME</span></a></h1>
+                    <h1><a href="#heroes">HEROES</a></h1>
+                    <h1><a href="#story">STORY</a></h1>
+                </div>
+
+                <div id="area-usuario" class="header-user-area d-flex align-items-center justify-content-center h-100">
+                    <a class="header-button d-flex align-items-center justify-content-center text-decoration-none"
+                        href="./login.html">
+                        <p class="mb-0">Login</p>
+                    </a>
+                </div>
             </nav>
         </header>
 
@@ -121,17 +130,21 @@
         <div class="heroes-search-wrapper d-flex flex-column align-items-center w-100 mb-4 px-4">
             <div class="heroes-search-container">
                 <div class="heroes-search-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8" />
+                        <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                    </svg>
                 </div>
-                <input
-                    type="text"
-                    id="heroes-search"
-                    class="heroes-search-input"
-                    placeholder="Search by hero name or ability..."
-                    autocomplete="off"
-                />
-                <button id="heroes-search-clear" class="heroes-search-clear" aria-label="Clear search" style="display:none;">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                <input type="text" id="heroes-search" class="heroes-search-input"
+                    placeholder="Search by hero name or ability..." autocomplete="off" />
+                <button id="heroes-search-clear" class="heroes-search-clear" aria-label="Clear search"
+                    style="display:none;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18" />
+                        <line x1="6" y1="6" x2="18" y2="18" />
+                    </svg>
                 </button>
             </div>
             <p id="heroes-search-count" class="heroes-search-count" style="display:none;"></p>
@@ -142,10 +155,11 @@
             <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 g-3 justify-content-center"
                 id="heroes-wrapper">
             </div>
-            <p id="heroes-search-empty" class="heroes-search-empty" style="display:none;">No heroes found for "<span id="heroes-search-term"></span>"</p>
+            <p id="heroes-search-empty" class="heroes-search-empty" style="display:none;">No heroes found for "<span
+                    id="heroes-search-term"></span>"</p>
         </div>
 
-    <!-- Heroes Chart -->
+        <!-- Heroes Chart -->
 
         <div class="heroes-chart-card d-flex flex-column align-items-center mt-4 mb-4">
             <h2>HEROES - BY CLASS & FUNCTION</h2>
@@ -229,14 +243,29 @@
     <aside></aside>
 
     <!-- Footer com dados do Projeto e meus dados de Aluno -->
-    <footer class="w-100 d-flex justify-content-center align-items-center py-3 flex-column">
-        <p class="mb-0">Trabalho prático - Desenvolvimento de Interfaces Web - PUC MINAS</p>
-        <p class="mb-16">Aluno: (ABNER ALMEIDA) 1512771</p>
-        <p class="mb-0">&copy; 2026 Tema: Overwatch. All rights reserved.</p>
+    <footer class="site-footer w-100 d-flex justify-content-center align-items-center py-4 flex-column">
+        <div class="footer-profile d-flex flex-column align-items-center text-center">
+            <img class="footer-photo"
+                src="https://instagram.fdiq5-1.fna.fbcdn.net/v/t51.82787-15/712465595_18115031278885828_4349164110516986113_n.heic?stp=dst-jpg_e35_tt6&_nc_cat=111&ig_cache_key=MzkwOTYwMzg4MjQyOTQyMzMyMQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=XKB8lK84BJMQ7kNvwE-GEYz&_nc_oc=Adr_PmpuwS7fPTL0gGnUzMuMACdnapQ7BbboaO5pm1g5rRmfH32VgilwdV5Ux4KXyoM&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fdiq5-1.fna&_nc_gid=UztK2vVblYs6RV_M3eF1Og&_nc_ss=7a22e&oh=00_Af9Vb9EgGpW4W1N-Sorub-tGjdidp4YyifoNKvnWmy-6eg&oe=6A465E65"
+                alt="Foto de Abner Almeida">
+
+            <h2>Abner Almeida</h2>
+            <p class="footer-text mb-1">Trabalho prático - Desenvolvimento de Interfaces Web - PUC MINAS</p>
+            <p class="footer-text mb-3">Aluno: ABNER ALMEIDA - 1512771</p>
+
+            <div class="footer-socials d-flex justify-content-center align-items-center gap-3 flex-wrap">
+                <a href="https://www.linkedin.com/in/abner-almeida-0b296224a/" target="_blank"
+                    rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://www.instagram.com/abnersolk/" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a href="https://github.com/abneralmeidacord" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+        </div>
+
+        <p class="footer-copy mb-0 mt-3">&copy; 2026 Tema: Overwatch. All rights reserved.</p>
     </footer>
 
     <!-- Puxando scripts do Bootstrap e do index.js -->
-     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/scripts/app.js"></script>
 </body>

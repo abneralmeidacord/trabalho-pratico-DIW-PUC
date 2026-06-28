@@ -4,6 +4,9 @@ const HEROES_URL = "/heroes";
 /* Lista de habilidades do sistema vindo do JSON Server*/
 const DETAILS_URL = "/details";
 
+/* URL base do json-server */
+const URL_BASE = "http://localhost:3000";
+
 /* pega o id da div que será o output dos detalhes do Herói no HTML*/
 const heroDetailsWrapper = document.getElementById("hero-details");
 
@@ -368,3 +371,153 @@ if (heroesWrapper) {
 if (heroDetailsWrapper) {
   renderHeroDetails();
 }
+
+
+/* Essa variável guarda o avatar escolhido pelo usuário */
+let avatarEscolhido = "";
+
+
+/* Função para mostrar mensagens de erro na tela */
+function mostrarErro(mensagem) {
+    const msgErro = document.getElementById("msg-erro");
+    const msgSucesso = document.getElementById("msg-sucesso");
+
+    if (msgErro) {
+        msgErro.textContent = mensagem;
+        msgErro.style.display = "block";
+    }
+
+    if (msgSucesso) {
+        msgSucesso.style.display = "none";
+    }
+}
+
+
+/* Função para mostrar mensagens de sucesso na tela */
+function mostrarSucesso(mensagem) {
+    const msgErro = document.getElementById("msg-erro");
+    const msgSucesso = document.getElementById("msg-sucesso");
+
+    if (msgSucesso) {
+        msgSucesso.textContent = mensagem;
+        msgSucesso.style.display = "block";
+    }
+
+    if (msgErro) {
+        msgErro.style.display = "none";
+    }
+}
+
+
+/* Função para mostrar ou esconder a senha */
+function toggleSenha(idCampo, botao) {
+    const campoSenha = document.getElementById(idCampo);
+
+    if (campoSenha.type === "password") {
+        campoSenha.type = "text";
+        botao.textContent = "🙈";
+    } else {
+        campoSenha.type = "password";
+        botao.textContent = "👁";
+    }
+}
+
+
+/* Função que faz o login do usuário */
+async function fazerLogin(evento) {
+    evento.preventDefault();
+
+    const login = document.getElementById("login").value.trim();
+    const senha = document.getElementById("senha").value.trim();
+    const btnLogin = document.getElementById("btn-login");
+
+    /* Validação simples dos campos */
+    if (login === "" || senha === "") {
+        mostrarErro("Please fill in all fields.");
+        return;
+    }
+
+    btnLogin.disabled = true;
+    btnLogin.textContent = "Logging in...";
+
+    try {
+        const resposta = await fetch(`${URL_BASE}/usuarios?login=${login}`);
+        const usuarios = await resposta.json();
+
+        /* Procura um usuário com o mesmo login e senha */
+        const usuarioEncontrado = usuarios.find(function (usuario) {
+            return usuario.login === login && usuario.senha === senha;
+        });
+
+        if (!usuarioEncontrado) {
+            mostrarErro("Incorrect username or password.");
+
+            btnLogin.disabled = false;
+            btnLogin.textContent = "Log In →";
+
+            return;
+        }
+
+        /* Salva o usuário logado na sessão do navegador */
+        sessionStorage.setItem("usuarioLogado", JSON.stringify(usuarioEncontrado));
+
+        mostrarSucesso("Login successful!");
+
+        setTimeout(function () {
+            window.location.href = "index.html";
+        }, 1000);
+
+    } catch (erro) {
+        mostrarErro("Could not connect to the server. Check if json-server is running.");
+
+        btnLogin.disabled = false;
+        btnLogin.textContent = "Log In →";
+    }
+}
+
+/* Função para pegar o usuário que está salvo na sessão */
+function pegarUsuarioLogado() {
+  const usuarioSalvo = sessionStorage.getItem("usuarioLogado");
+
+  if (!usuarioSalvo) {
+    return null;
+  }
+
+  return JSON.parse(usuarioSalvo);
+}
+
+/* Função para mostrar Login ou os dados do usuário no header */
+function mostrarUsuarioNoHeader() {
+  const areaUsuario = document.getElementById("area-usuario");
+  const usuarioLogado = pegarUsuarioLogado();
+
+  if (!areaUsuario) {
+    return;
+  }
+
+  if (!usuarioLogado) {
+    areaUsuario.innerHTML = `
+      <a class="header-button d-flex align-items-center justify-content-center text-decoration-none" href="./login.html">
+        <p class="mb-0">Login</p>
+      </a>
+    `;
+    return;
+  }
+
+  areaUsuario.innerHTML = `
+    <div class="usuario-logado">
+      <img src="${usuarioLogado.fotoPerfil}" alt="${usuarioLogado.nome}" class="foto-usuario">
+      <span class="nome-usuario">${usuarioLogado.login}</span>
+      <button class="btn-sair" onclick="sair()">Logout</button>
+    </div>
+  `;
+}
+
+/* Função para sair da conta */
+function sair() {
+  sessionStorage.removeItem("usuarioLogado");
+  window.location.href = "login.html";
+}
+
+/* Chama a função para atualizar o header quando a página abre */
+mostrarUsuarioNoHeader();

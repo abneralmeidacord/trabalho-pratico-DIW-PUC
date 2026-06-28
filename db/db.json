@@ -1,4 +1,20 @@
 {
+  "users": [
+    {
+      "nome": "Abner Almeida",
+      "login": "Abnersolk",
+      "senha": "123456",
+      "fotoPerfil": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ff5c54f43ad253c7faeda9c4ed31d42582ea6b19205d197866f3dd0c0aa14c16.png",
+      "id": 1
+    },
+    {
+      "nome": "Hannah Almeida",
+      "login": "Hannahsolk",
+      "senha": "Hannah123",
+      "fotoPerfil": "https://static.wikia.nocookie.net/overwatch_gamepedia/images/1/19/Icon-D.Va.png/revision/latest/scale-to-width-down/250?cb=20221005161600",
+      "id": 2
+    }
+  ],
   "heroes": [
     {
       "id": 1,
