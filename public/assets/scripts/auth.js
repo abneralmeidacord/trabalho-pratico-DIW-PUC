@@ -1,5 +1,5 @@
 /* URL base do json-server */
-const URL_BASE = "http://localhost:3000";
+const URL_BASE = "";
 
 /* Essa variável guarda o avatar escolhido pelo usuário */
 let avatarEscolhido = "";

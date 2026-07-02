@@ -5,7 +5,7 @@ const HEROES_URL = "/heroes";
 const DETAILS_URL = "/details";
 
 /* URL base do json-server */
-const URL_BASE = "http://localhost:3000";
+const URL_BASE = "";
 
 /* pega o id da div que será o output dos detalhes do Herói no HTML*/
 const heroDetailsWrapper = document.getElementById("hero-details");
