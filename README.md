@@ -1,6 +1,7 @@
 # Overwatch Heroes - Trabalho Prático 1
 
 Este projeto foi desenvolvido como parte do **Trabalho Prático 1 - Exibição e Navegação Dinâmicas**. A proposta do site é apresentar personagens do universo do meu game favorito **Overwatch** de forma dinâmica, utilizando **HTML, CSS, Bootstrap, JavaScript, Bootstrap Icons, Chart.js e estrutura JSON** para organizar e exibir as informações dos heróis.
+___
 
 ## Sobre o projeto
 
@@ -9,7 +10,12 @@ O site funciona como uma página informativa sobre heróis de Overwatch. Na pág
 O projeto foi pensado para seguir uma estrutura dinâmica, então os heróis não ficaram escritos manualmente no HTML. Eles estão armazenados dentro de uma estrutura JSON, sendo buscados pelo JavaScript e renderizados automaticamente na tela.
 
 Além da listagem dos heróis, o projeto também possui sistema de login, cadastro de usuários, favoritos e uma página de perfil, onde cada usuário consegue visualizar seus heróis favoritos.
+___
 
+## Vídeo demonstração
+https://github.com/user-attachments/assets/df2a3258-fbd9-4d64-bfdb-178a8af98bfa
+
+___
 ## Funcionalidades
 
 - Exibição dinâmica dos heróis na página inicial;
@@ -36,6 +42,7 @@ Além da listagem dos heróis, o projeto também possui sistema de login, cadast
 - Layout responsivo para diferentes tamanhos de tela;
 - Estilização inspirada na identidade visual de Overwatch.
 
+___
 ## Status do desenvolvimento
 
 A estrutura principal do projeto já está desenvolvida, incluindo a listagem dinâmica dos personagens, a navegação entre páginas, a exibição dos detalhes dos heróis, o sistema de login, cadastro, favoritos e perfil do usuário.
@@ -44,6 +51,9 @@ O carrossel de heróis em destaque implementado na página inicial segue a propo
 
 Também foram adicionadas funcionalidades extras para deixar o projeto mais completo, como busca de heróis, gráfico com Chart.js, autenticação simples de usuários e sistema de favoritos integrado ao JSON Server.
 
+O projeto está concluído!
+
+___
 ## Tecnologias utilizadas
 
 - HTML5
@@ -79,6 +89,7 @@ Também foram adicionadas funcionalidades extras para deixar o projeto mais comp
 └── README.md
 ```
 
+___
 ## Como funciona
 
 Na página inicial, o JavaScript busca a lista de heróis cadastrados no `db.json` e cria automaticamente os cards na tela. Cada card possui um link que envia o usuário para a página de detalhes usando o ID do personagem na URL.
@@ -95,6 +106,7 @@ A página inicial também possui uma barra de pesquisa. Essa busca permite encon
 
 Além disso, a página inicial possui um gráfico feito com Chart.js, exibindo os heróis separados por classe e função, usando cores em tons de laranja para seguir a identidade visual do site.
 
+___
 ## Login, cadastro e usuários
 
 O projeto possui uma página de login e uma página de cadastro. No cadastro, o usuário informa nome, username, senha, confirmação de senha e escolhe uma foto de perfil com base nos heróis disponíveis no JSON.
@@ -103,6 +115,7 @@ Depois de cadastrado, o usuário pode fazer login. Ao entrar, suas informações
 
 Quando o usuário está logado, o header deixa de mostrar apenas o botão de login e passa a mostrar a foto de perfil, o username e o botão de logout. Ao clicar no usuário do header, ele é direcionado para a página de perfil e favoritos.
 
+___
 ## Sistema de favoritos
 
 Na página de detalhes de cada herói, existe uma área de favoritos. Se o usuário não estiver logado, aparece uma estrela vazia e a mensagem:
@@ -129,6 +142,7 @@ Exemplo de estrutura do usuário:
 }
 ```
 
+___
 ## Página de perfil e favoritos
 
 A página `perfil-favoritos.html` segue uma estrutura parecida com a página de detalhes do herói, mas adaptada para mostrar os dados do usuário.
@@ -139,6 +153,7 @@ O botão de retorno também foi adaptado, mudando de `Back to heroes` para `Back
 
 Na parte onde antes aparecia `ABILITIES`, agora aparece `FAVORITE HEROES`, exibindo os cards dos heróis que estão salvos no array `fav` do usuário logado.
 
+___
 ## Como executar o projeto
 
 Para o projeto funcionar corretamente, é necessário iniciar o JSON Server, pois os dados dos heróis, habilidades e usuários vêm do arquivo `db.json`.
@@ -163,6 +178,7 @@ db/db.json
 
 Com o servidor rodando, basta abrir as páginas dentro da pasta `public`.
 
+___
 ## Objetivo
 
 O objetivo do projeto é praticar a criação de páginas web dinâmicas, trabalhando com dados estruturados em JSON, manipulação do DOM com JavaScript, navegação por parâmetros na URL, construção de interfaces responsivas e uso de recursos externos como Bootstrap, Bootstrap Icons e Chart.js.
