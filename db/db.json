@@ -447,6 +447,13 @@
       "hero_img": "https://static.wikia.nocookie.net/overwatch_gamepedia/images/7/74/Icon-Shion.png/revision/latest?cb=20260616181841",
       "hero_class": "damage",
       "hero_func": "flanker"
+    },
+    {
+      "hero": "D.mon",
+      "hero_img": "https://efnrodzdhzvdgmctpjdx.supabase.co/storage/v1/object/public/gd-images/full/overwatch/dmon.webp?v=db08fe837063",
+      "hero_class": "tank",
+      "hero_func": "stalwart",
+      "id": 53
     }
   ],
   "details": [
@@ -2086,12 +2093,12 @@
       "hero": "Shion",
       "ability1": {
         "id": 1,
-        "name": "Kira Pistols",
+        "name": "Plasma Saber",
         "description": "Uses rapid-fire anima pistols to deal damage to enemies."
       },
       "ability2": {
         "id": 2,
-        "name": "Execution",
+        "name": "Portable Fusion Repeater",
         "description": "Fires an X-shaped volley of shots. Holding the ability tightens its spread."
       },
       "ability3": {
@@ -2108,6 +2115,46 @@
         "id": 5,
         "name": "Satsuriku Spree",
         "description": "Shion rushes forward three times while firing at nearby enemies."
+      }
+    },
+    {
+      "id": 53,
+      "heroId": 53,
+      "hero": "D.mon",
+      "ability1": {
+        "id": 1,
+        "name": "Plasma Saber (Mech'ed)",
+        "description": "Fast energy melee weapon"
+      },
+      "ability2": {
+        "id": 2,
+        "name": "Portable Fusion Repeater (De Mech'ed)",
+        "description": "Rapid fire machine gun"
+      },
+      "ability3": {
+        "id": 3,
+        "name": "Power Barrier",
+        "description": "Hold a frontal energy barrier"
+      },
+      "ability4": {
+        "id": 4,
+        "name": "Propulsors",
+        "description": "Consume fuel to surge in any horizontal direction"
+      },
+      "ability5": {
+        "id": 5,
+        "name": "Fusion Repeater",
+        "description": "Activate a rapid-fire machine gun"
+      },
+      "ability6": {
+        "id": 6,
+        "name": "Surging Strike",
+        "description": "While Power Barrier is deployed, strike forward to damage and push enemies back"
+      },
+      "ability7": {
+        "id": 7,
+        "name": "Limit Break",
+        "description": "Unleash a sweeping slash that grants self overhealth and amplifies damage taken by enemies"
       }
     }
   ]
